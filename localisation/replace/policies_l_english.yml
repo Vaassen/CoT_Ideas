@@ -1,0 +1,60 @@
+﻿l_english:
+ #ADM Policies
+ #Tier 1
+ vass_reform_the_goverment_1:0 "Reform the Government [1]"
+ vass_increased_taxes_1:0 "Increased Taxes [1]"
+ vass_a_fair_pay_1:0 "A Fair Pay [1]"
+ vass_building_spree_1:0 "Building Spree [1]"
+ vass_centralization_effort_1:0 "Centralization Effort [1]"
+ #Tier 2
+ vass_reform_the_goverment_2:0 "Reform the Government [2]"
+ vass_increased_taxes_2:0 "Increased Taxes [2]"
+ vass_a_fair_pay_2:0 "A Fair Pay [2]"
+ vass_building_spree_2:0 "Building Spree [2]"
+ vass_centralization_effort_2:0 "Centralization Effort [2]"
+ #Tier 3
+ vass_reform_the_goverment_3:0 "Reform the Government [3]"
+ vass_increased_taxes_3:0 "Increased Taxes [3]"
+ vass_a_fair_pay_3:0 "A Fair Pay [3]"
+ vass_building_spree_3:0 "Building Spree [3]"
+ vass_centralization_effort_3:0 "Centralization Effort [3]"
+
+ #DIP Policies
+ #Tier 1
+ vass_marine_corps_1:0 "Marine Corps [1]"
+ vass_encourage_trade_1:0 "Encourage Trade [1]"
+ vass_navy_propaganda_1:0 "Navy Propaganda [1]"
+ vass_integrated_court_1:0 "Integrated Court [1]"
+ vass_vast_dominion_1:0 "Vaasst Dominion [1]"
+ #Tier 2
+ vass_marine_corps_2:0 "Marine Corps [2]"
+ vass_encourage_trade_2:0 "Encourage Trade [2]"
+ vass_navy_propaganda_2:0 "Navy Propaganda [2]"
+ vass_integrated_court_2:0 "Integrated Court [2]"
+ vass_vast_dominion_2:0 "Vaasst Dominion [2]"
+ #Tier3
+ vass_marine_corps_3:0 "Marine Corps [3]"
+ vass_encourage_trade_3:0 "Encourage Trade [3]"
+ vass_navy_propaganda_3:0 "Navy Propaganda [3]"
+ vass_integrated_court_3:0 "Integrated Court [3]"
+ vass_vast_dominion_3:0 "Vaasst Dominion [3]"
+
+ #MIL Policies
+ #Tier 1
+ vass_stronghold_strategy_1:0 "Stronghold Strategy [1]"
+ vass_improved_logistics_1:0 "Improved Logistics [1]"
+ vass_adventurer_army_1:0 "Adventurer Army [1]"
+ vass_army_expansion_1:0 "Army Expansion [1]"
+ vass_army_improvement_1:0 "Army Improvement [1]"
+ #Tier 2
+ vass_stronghold_strategy_2:0 "Stronghold Strategy [2]"
+ vass_improved_logistics_2:0 "Improved Logistics [2]"
+ vass_adventurer_army_2:0 "Adventurer Army [2]"
+ vass_army_expansion_2:0 "Army Expansion [2]"
+ vass_army_improvement_2:0 "Army Improvement [2]"
+ #Tier 3
+ vass_stronghold_strategy_3:0 "Stronghold Strategy [3]"
+ vass_improved_logistics_3:0 "Improved Logistics [3]"
+ vass_adventurer_army_3:0 "Adventurer Army [3]"
+ vass_army_expansion_3:0 "Army Expansion [3]"
+ vass_army_improvement_3:0 "Army Improvement [3]"
