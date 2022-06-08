@@ -51,7 +51,7 @@
  at_sta6:0 "Trained Reserves"
  at_sta6_desc:0 "It is expensive to train up a replacement soldier in the middle of a war. Let us establish a system of trained reserves to bypass this problem."
  at_sta7:0 "Fierce Drillmasters"
- at_sta7_desc:0 "Your training is finished when you fear the drillmaster more than the enemy."
+ at_sta7_desc:0 "Your army is now so standing, that it does not require any chairs. \nChairs §R-100%§W"
  at_standing_bonus:0 "Completed Army Type: Standing §Y***§!"
 
  #done
