@@ -10,5 +10,5 @@ dependencies={
 	"[CoT] Anbennar"
 }
 supported_version="1.33.3"
-path="C:/Users/Vinterdo/Documents/Paradox Interactive/Europa Universalis IV/mod/ISA_telgeir"
+path="mod/CriersOfTellum"
 remote_file_id="2797964992"
