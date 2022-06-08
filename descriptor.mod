@@ -10,5 +10,5 @@ dependencies={
 	"[CoT] Anbennar"
 }
 supported_version="1.33.3"
-path="C:/Users/toile/Documents/Paradox Interactive/Europa Universalis IV/mod/criersoftellum_maddoxcom_fork"
+path="mod/ISA_telgeir"
 remote_file_id="2797964992"
