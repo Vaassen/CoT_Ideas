@@ -1005,6 +1005,7 @@ innovativeness_ideas = { #Technocatic Ideas
 	}
 	optimism = {
 		#Artifice Capacity
+		core_decay_on_your_own = 0.001
 	}
 	formalized_officer_corps = {
 		technology_cost = -0.1
@@ -1044,7 +1045,7 @@ religious_ideas = { #fervor ideas #done
 		global_tax_modifier = 0.10
 	}
 	church_attendance_duty = {
-		missionaries = 1
+		missionary_maintenance_cost = -0.33
 	}
 	divine_supremacy = {
 		global_missionary_strength = 0.03
@@ -1055,7 +1056,6 @@ religious_ideas = { #fervor ideas #done
 	}
 	religious_tradition = {
 		manpower_in_true_faith_provinces = 0.10
-		missionary_maintenance_cost = -0.33
 	}
 	inquisition = {
 		same_culture_advisor_cost = -0.1
@@ -1244,7 +1244,7 @@ plutocracy_ideas = { #government: republic
 		candidate_random_bonus = 1
 	}
 	free_merchants = {
-		monarch_lifespan = 2.50
+		monarch_lifespan = 5
 		prestige_decay = -0.005
 	}
 	free_subjects = {
@@ -1298,6 +1298,7 @@ theocracy_gov_ideas = { #government: theocracy
 	martyrs = {
 		global_tax_modifier = 0.20
 		country_admin_power = 2
+		monarch_lifespan = 2.5
 	}
 
 }
