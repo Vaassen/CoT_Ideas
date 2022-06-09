@@ -1,0 +1,52 @@
+
+namespace = cot_ideasCustomModifiers
+
+# trigger additional artifice capacity
+country_event = {
+	id = cot_ideasCustomModifiers.1
+	title = cot_ideasCustomModifiers.1.t
+	desc = cot_ideasCustomModifiers.1.d
+	hidden = yes
+	picture = POPE_PREACHING_eventPicture
+	
+	trigger = {
+		has_idea = optimism
+		NOT = { has_country_flag = technocratic_optimism }
+	}
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = "ideasCustomModifiers.1.1"
+		set_country_flag = technocratic_optimism
+		change_variable = {
+			which = StaticArtificePoints
+			value = 10
+		}
+	}
+}
+# remove additional artifice capacity
+country_event = {
+	
+	id = cot_ideasCustomModifiers.2
+	title = cot_ideasCustomModifiers.2.t
+	desc = cot_ideasCustomModifiers.2.d
+	hidden = yes
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = technocratic_optimism
+		NOT = { has_idea = optimism }
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = "cot_ideasCustomModifiers.2.1"
+		clr_country_flag = technocratic_optimism
+		subtract_variable = {
+			which = StaticArtificePoints
+			value = 10
+		}
+	}
+}
