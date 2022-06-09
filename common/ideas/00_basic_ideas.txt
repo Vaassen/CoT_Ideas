@@ -1005,6 +1005,7 @@ innovativeness_ideas = { #Technocatic Ideas
 	}
 	optimism = {
 		#Artifice Capacity
+		core_decay_on_your_own = 0.001
 	}
 	formalized_officer_corps = {
 		technology_cost = -0.1

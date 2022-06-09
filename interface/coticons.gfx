@@ -1,0 +1,8 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_blank"
+		texturefile = "gfx//interface//blank.dds"
+		loadType = "INGAME"
+		
+	}
+}
