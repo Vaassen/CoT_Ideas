@@ -1044,7 +1044,7 @@ religious_ideas = { #fervor ideas #done
 		global_tax_modifier = 0.10
 	}
 	church_attendance_duty = {
-		missionaries = 1
+		missionary_maintenance_cost = -0.33
 	}
 	divine_supremacy = {
 		global_missionary_strength = 0.03
@@ -1055,7 +1055,6 @@ religious_ideas = { #fervor ideas #done
 	}
 	religious_tradition = {
 		manpower_in_true_faith_provinces = 0.10
-		missionary_maintenance_cost = -0.33
 	}
 	inquisition = {
 		same_culture_advisor_cost = -0.1
