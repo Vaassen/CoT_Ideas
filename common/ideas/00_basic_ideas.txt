@@ -627,6 +627,10 @@ exploration_ideas = { #reclamation #done
 	category = DIP
 	important = yes
 
+	trigger = {
+		adm_tech = 5
+	}
+	
 	bonus = {
 		trade_efficiency = 0.1
 		trade_steering = 0.1
