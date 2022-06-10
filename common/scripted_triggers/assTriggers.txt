@@ -1,0 +1,13 @@
+is_violating_ass = {
+	# ASS points are negative
+	NOT = {
+		check_variable = {
+			which = UsedAssPointsDifference
+			value = 0
+		}
+	}
+}
+
+has_ass_warning_issued = {
+	has_country_flag = AssViolationWarning
+}
