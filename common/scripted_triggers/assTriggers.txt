@@ -11,3 +11,27 @@ is_violating_ass = {
 has_ass_warning_issued = {
 	has_country_flag = AssViolationWarning
 }
+
+is_player = {
+	NOT = {
+		ai = no
+	}
+}
+
+is_ass_ally = {
+	# me - country that is currently checked
+	# target - any other country
+	# root scope - target
+	AND = {
+		is_player = yes
+		OR = {
+			alliance_with = $me$
+			guaranteed_by = $me$
+			is_supporting_independence_of = $me$
+			has_guaranteed = $me$
+			$me$ = {
+				is_supporting_independence_of = $target$
+			}
+		}
+	}
+}

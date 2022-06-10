@@ -153,11 +153,15 @@ update_ass_points = {
 		# non-gps
 		if = {
 			limit = {
-				num_of_allies = 1
 				calc_true_if = {
-					all_ally = {
-						is_great_power = no
-						ai =  no
+					all_known_country = {
+						AND = {
+							is_great_power = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
 					}
 					amount = 1
 				}
@@ -169,11 +173,15 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 2
 				calc_true_if = {
-					all_ally = {
-						is_great_power = no
-						ai =  no
+					all_known_country = {
+						AND = {
+							is_great_power = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
 					}
 					amount = 2
 				}
@@ -185,11 +193,15 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 3
 				calc_true_if = {
-					all_ally = {
-						is_great_power = no
-						ai =  no
+					all_known_country = {
+						AND = {
+							is_great_power = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
 					}
 					amount = 3
 				}
@@ -201,11 +213,15 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 4
 				calc_true_if = {
-					all_ally = {
-						is_great_power = no
-						ai =  no
+					all_known_country = {
+						AND = {
+							is_great_power = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
 					}
 					amount = 4
 				}
@@ -217,11 +233,15 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 5
 				calc_true_if = {
-					all_ally = {
-						is_great_power = no
-						ai =  no
+					all_known_country = {
+						AND = {
+							is_great_power = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
 					}
 					amount = 5
 				}
@@ -236,12 +256,14 @@ update_ass_points = {
 		
 		if = {
 			limit = {
-				num_of_allies = 1
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
 							is_great_power = yes
-							ai = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 						}
 					}
 					amount = 1
@@ -254,12 +276,14 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 2
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
 							is_great_power = yes
-							ai = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 						}
 					}
 					amount = 2
@@ -272,12 +296,14 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 3
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
 							is_great_power = yes
-							ai = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 						}
 					}
 					amount = 3
@@ -290,12 +316,14 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 4
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
 							is_great_power = yes
-							ai = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 						}
 					}
 					amount = 4
@@ -308,12 +336,14 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 5
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
 							is_great_power = yes
-							ai = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 						}
 					}
 					amount = 5
@@ -328,12 +358,16 @@ update_ass_points = {
 		# same culture and religion
 		if = {
 			limit = {
-				num_of_allies = 1
 				calc_true_if = {
-					all_ally = {
-						culture = ROOT
-						religion = ROOT
-						ai =  no
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							culture = ROOT
+							religion = ROOT
+						}
 					}
 					amount = 1
 				}
@@ -345,12 +379,16 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 2
 				calc_true_if = {
-					all_ally = {
-						culture = ROOT
-						religion = ROOT
-						ai =  no
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							culture = ROOT
+							religion = ROOT
+						}
 					}
 					amount = 2
 				}
@@ -362,12 +400,16 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 3
 				calc_true_if = {
-					all_ally = {
-						culture = ROOT
-						religion = ROOT
-						ai =  no
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							culture = ROOT
+							religion = ROOT
+						}
 					}
 					amount = 3
 				}
@@ -379,12 +421,16 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 4
 				calc_true_if = {
-					all_ally = {
-						culture = ROOT
-						religion = ROOT
-						ai =  no
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							culture = ROOT
+							religion = ROOT
+						}
 					}
 					amount = 4
 				}
@@ -396,12 +442,16 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 5
 				calc_true_if = {
-					all_ally = {
-						culture = ROOT
-						religion = ROOT
-						ai =  no
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							culture = ROOT
+							religion = ROOT
+						}
 					}
 					amount = 5
 				}
@@ -416,11 +466,13 @@ update_ass_points = {
 		
 		if = {
 			limit = {
-				num_of_allies = 1
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
-							ai =  no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 							NOT = {
 								AND = {
 									culture = ROOT
@@ -443,11 +495,13 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 2
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
-							ai =  no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 							NOT = {
 								AND = {
 									culture = ROOT
@@ -470,11 +524,13 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 3
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
-							ai =  no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 							NOT = {
 								AND = {
 									culture = ROOT
@@ -497,11 +553,13 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 4
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
-							ai =  no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 							NOT = {
 								AND = {
 									culture = ROOT
@@ -524,11 +582,13 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 5
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
-							ai =  no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 							NOT = {
 								AND = {
 									culture = ROOT
@@ -554,11 +614,13 @@ update_ass_points = {
 		
 		if = {
 			limit = {
-				num_of_allies = 1
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
-							ai =  no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 							NOT = {
 								culture = ROOT
 								religion = ROOT
@@ -575,11 +637,13 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 2
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
-							ai =  no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 							NOT = {
 								culture = ROOT
 								religion = ROOT
@@ -596,11 +660,13 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 3
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
-							ai =  no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 							NOT = {
 								culture = ROOT
 								religion = ROOT
@@ -617,11 +683,13 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 4
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
-							ai =  no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 							NOT = {
 								culture = ROOT
 								religion = ROOT
@@ -638,11 +706,13 @@ update_ass_points = {
 		}
 		if = {
 			limit = {
-				num_of_allies = 5
 				calc_true_if = {
-					all_ally = {
+					all_known_country = {
 						AND = {
-							ai =  no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
 							NOT = {
 								culture = ROOT
 								religion = ROOT
@@ -666,7 +736,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = no
-							ai =  no
+							is_player = yes
 							NOT = {
 								development_of_overlord_fraction = 0.5
 							}
@@ -686,7 +756,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = no
-							ai =  no
+							is_player = yes
 							NOT = {
 								development_of_overlord_fraction = 0.5
 							}
@@ -706,7 +776,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = no
-							ai =  no
+							is_player = yes
 							NOT = {
 								development_of_overlord_fraction = 0.5
 							}
@@ -726,7 +796,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = no
-							ai =  no
+							is_player = yes
 							NOT = {
 								development_of_overlord_fraction = 0.5
 							}
@@ -746,7 +816,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = no
-							ai =  no
+							is_player = yes
 							NOT = {
 								development_of_overlord_fraction = 0.5
 							}
@@ -769,7 +839,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = no
-							ai =  no
+							is_player = yes
 							development_of_overlord_fraction = 0.5
 						}
 					}
@@ -787,7 +857,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = no
-							ai =  no
+							is_player = yes
 							development_of_overlord_fraction = 0.5
 						}
 					}
@@ -805,7 +875,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = no
-							ai =  no
+							is_player = yes
 							development_of_overlord_fraction = 0.5
 						}
 					}
@@ -823,7 +893,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = no
-							ai =  no
+							is_player = yes
 							development_of_overlord_fraction = 0.5
 						}
 					}
@@ -841,7 +911,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = no
-							ai =  no
+							is_player = yes
 							development_of_overlord_fraction = 0.5
 						}
 					}
@@ -861,7 +931,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = yes
-							ai =  no
+							is_player = yes
 							NOT = {
 								development_of_overlord_fraction = 0.75
 							}
@@ -881,7 +951,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = yes
-							ai =  no
+							is_player = yes
 							NOT = {
 								development_of_overlord_fraction = 0.75
 							}
@@ -901,7 +971,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = yes
-							ai =  no
+							is_player = yes
 							NOT = {
 								development_of_overlord_fraction = 0.75
 							}
@@ -921,7 +991,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = yes
-							ai =  no
+							is_player = yes
 							NOT = {
 								development_of_overlord_fraction = 0.75
 							}
@@ -941,7 +1011,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = yes
-							ai =  no
+							is_player = yes
 							NOT = {
 								development_of_overlord_fraction = 0.75
 							}
@@ -964,7 +1034,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = yes
-							ai =  no
+							is_player = yes
 							development_of_overlord_fraction = 0.75
 						}
 					}
@@ -982,7 +1052,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = yes
-							ai =  no
+							is_player = yes
 							development_of_overlord_fraction = 0.75
 						}
 					}
@@ -1000,7 +1070,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = yes
-							ai =  no
+							is_player = yes
 							development_of_overlord_fraction = 0.75
 						}
 					}
@@ -1018,7 +1088,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = yes
-							ai =  no
+							is_player = yes
 							development_of_overlord_fraction = 0.75
 						}
 					}
@@ -1036,7 +1106,7 @@ update_ass_points = {
 					all_subject_country = {
 						AND = {
 							is_lesser_in_union = yes
-							ai =  no
+							is_player = yes
 							development_of_overlord_fraction = 0.75
 						}
 					}
