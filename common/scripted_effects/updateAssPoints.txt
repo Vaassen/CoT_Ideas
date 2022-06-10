@@ -241,7 +241,7 @@ update_ass_points = {
 					all_ally = {
 						AND = {
 							is_great_power = yes
-							ai =  no
+							ai = no
 						}
 					}
 					amount = 1
@@ -256,9 +256,11 @@ update_ass_points = {
 			limit = {
 				num_of_allies = 2
 				calc_true_if = {
-					AND = {
-						is_great_power = yes
-						ai =  no
+					all_ally = {
+						AND = {
+							is_great_power = yes
+							ai = no
+						}
 					}
 					amount = 2
 				}
@@ -272,9 +274,11 @@ update_ass_points = {
 			limit = {
 				num_of_allies = 3
 				calc_true_if = {
-					AND = {
-						is_great_power = yes
-						ai =  no
+					all_ally = {
+						AND = {
+							is_great_power = yes
+							ai = no
+						}
 					}
 					amount = 3
 				}
@@ -288,9 +292,11 @@ update_ass_points = {
 			limit = {
 				num_of_allies = 4
 				calc_true_if = {
-					AND = {
-						is_great_power = yes
-						ai =  no
+					all_ally = {
+						AND = {
+							is_great_power = yes
+							ai = no
+						}
 					}
 					amount = 4
 				}
@@ -304,9 +310,11 @@ update_ass_points = {
 			limit = {
 				num_of_allies = 5
 				calc_true_if = {
-					AND = {
-						is_great_power = yes
-						ai =  no
+					all_ally = {
+						AND = {
+							is_great_power = yes
+							ai = no
+						}
 					}
 					amount = 5
 				}
