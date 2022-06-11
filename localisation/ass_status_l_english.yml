@@ -1,0 +1,10 @@
+﻿l_english:
+ ass_status_title:0 "£icon_ass_small£ Display ASS Breakdown"
+ ass_status_desc:0 ""
+ ass_status_tooltip:0 "§b_§!\n§b________§! £icon_ass£\n\n\nYour max §gASS§! points: §G [Root.MaxAssPoints.GetValue] §!\n\nYour used §gASS§! points: §R [Root.UsedAssPointsTotal.GetValue] §!\nFrom:\nMinor alliances: §R [Root.UsedAssPointsMinor.GetValue] §!\nMajor alliances: §R [Root.UsedAssPointsMajor.GetValue] §!\nSubjects under 50% dev: §R [Root.UsedAssPointsVassalsUnder50.GetValue] §!\nSubjects over 50% dev: §R [Root.UsedAssPointsVassalOver50.GetValue] §!\nUnions under 75% dev: §R [Root.UsedAssPointsPUUnder75.GetValue] §!\nUnions over 75% dev: §R [Root.UsedAssPointsPUOver75.GetValue] §!\nSame culture and religion allies: §G [Root.UsedAssPointsSameCultureAndReligion.GetValue] §!\nSame culture or religion allies: §R [Root.UsedAssPointsSameCultureOrReligion.GetValue] §!\nOther culture and religion allies: §R [Root.UsedAssPointsOtherCultureAndReligion.GetValue] §!\n\nPoints left: §W [Root.UsedAssPointsDifference.GetValue] §!"
+ assPoints.2.t:0 "You are violating ASS rules!"
+ assPoints.2.d:0 "Please fix your player alliances. If you won't, you will be prosecuted by admins. "
+ assPoints.2.1:0 "Im sorry, i will fix that immediately"
+ assPoints.4.t:0 "$COUNTRY$ violated ASS rules and didn't fix them when asked politely"
+ assPoints.4.d:0 "He should be ashamed of his behaviour and apologize to every player. "
+ assPoints.4.1:0 "Shame! Shame! Shame!"
