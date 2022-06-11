@@ -113,8 +113,10 @@ on_startup = {
 		great_conqueror.1				#GC setup
 		new_sun_cult.7 			#NSC setup in case MoH is disabled
 		flavor_honsai.1 #Ghostempror lifetime startup
-
-
+		
+		
+		### COT CHANGE ###
+		assPoints.1
 	}
 
 	#update_artifice_points = yes
@@ -5914,6 +5916,8 @@ on_four_year_pulse = {
 
 	events = {
 		lake.102 #Lake Federation Elections
+		### COT CHANGE ###
+		assPoints.1
 	}
 	random_events = {
 		# Colonial Nations
