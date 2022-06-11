@@ -3,11 +3,11 @@ tags={
 	"Balance"
 	"Gameplay"
 }
-name="[CoT] Ideas, Simple as 'Ozgarom'"
+name="Ideas, Simple as 'Rubyhold'"
 dependencies={
 	"Anbennar: A Fantasy Total Conversion Mod"
 	"Anbennar-PublicFork"
-	"[CoT] Anbennar 'Ozgarom'"
+	"[CoT] Anbennar"
 }
 supported_version="1.33.3"
 path="mod/CriersOfTellum"
