@@ -72,6 +72,13 @@ update_ass_points = {
 			}
 		}
 		if = {
+			limit = { has_active_policy = vass_integrated_court_3 }
+			change_variable = {
+				which = MaxAssPoints
+				value = 1
+			}
+		}
+		if = {
 			limit = { is_emperor = yes }
 			change_variable = {
 				which = MaxAssPoints

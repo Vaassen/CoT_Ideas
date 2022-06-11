@@ -13,9 +13,7 @@ has_ass_warning_issued = {
 }
 
 is_player = {
-	NOT = {
-		ai = no
-	}
+	ai = no
 }
 
 is_ass_ally = {
@@ -33,5 +31,23 @@ is_ass_ally = {
 				is_supporting_independence_of = $target$
 			}
 		}
+	}
+}
+
+has_any_ass_ally = {
+	calc_true_if = {
+		all_known_country = {
+			OR = {
+				is_ass_ally = {
+					me = $me$
+					target = THIS
+				}
+				AND = {
+					is_subject_of = $me$
+					is_player = yes
+				}
+			}
+		}
+		amount = 1
 	}
 }

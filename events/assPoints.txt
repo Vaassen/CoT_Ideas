@@ -44,6 +44,9 @@ country_event = {
 		AND = {
 			has_ass_warning_issued = no
 			is_violating_ass = yes
+			has_any_ass_ally = {
+				me = ROOT
+			}
 		}
 	}
 	immediate = {
