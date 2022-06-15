@@ -372,7 +372,7 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
-							culture = ROOT
+							culture_group = ROOT
 							religion = ROOT
 						}
 					}
@@ -393,7 +393,7 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
-							culture = ROOT
+							culture_group = ROOT
 							religion = ROOT
 						}
 					}
@@ -414,7 +414,7 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
-							culture = ROOT
+							culture_group = ROOT
 							religion = ROOT
 						}
 					}
@@ -435,7 +435,7 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
-							culture = ROOT
+							culture_group = ROOT
 							religion = ROOT
 						}
 					}
@@ -456,7 +456,7 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
-							culture = ROOT
+							culture_group = ROOT
 							religion = ROOT
 						}
 					}
@@ -482,12 +482,12 @@ update_ass_points = {
 							}
 							NOT = {
 								AND = {
-									culture = ROOT
+									culture_group = ROOT
 									religion = ROOT
 								}
 							}
 							OR = {
-								culture = ROOT
+								culture_group = ROOT
 								religion = ROOT
 							}
 						}
@@ -511,12 +511,12 @@ update_ass_points = {
 							}
 							NOT = {
 								AND = {
-									culture = ROOT
+									culture_group = ROOT
 									religion = ROOT
 								}
 							}
 							OR = {
-								culture = ROOT
+								culture_group = ROOT
 								religion = ROOT
 							}
 						}
@@ -540,12 +540,12 @@ update_ass_points = {
 							}
 							NOT = {
 								AND = {
-									culture = ROOT
+									culture_group = ROOT
 									religion = ROOT
 								}
 							}
 							OR = {
-								culture = ROOT
+								culture_group = ROOT
 								religion = ROOT
 							}
 						}
@@ -569,12 +569,12 @@ update_ass_points = {
 							}
 							NOT = {
 								AND = {
-									culture = ROOT
+									culture_group = ROOT
 									religion = ROOT
 								}
 							}
 							OR = {
-								culture = ROOT
+								culture_group = ROOT
 								religion = ROOT
 							}
 						}
@@ -598,12 +598,12 @@ update_ass_points = {
 							}
 							NOT = {
 								AND = {
-									culture = ROOT
+									culture_group = ROOT
 									religion = ROOT
 								}
 							}
 							OR = {
-								culture = ROOT
+								culture_group = ROOT
 								religion = ROOT
 							}
 						}
@@ -629,7 +629,7 @@ update_ass_points = {
 								target = THIS
 							}
 							NOT = {
-								culture = ROOT
+								culture_group = ROOT
 								religion = ROOT
 							}
 						}
@@ -652,7 +652,7 @@ update_ass_points = {
 								target = THIS
 							}
 							NOT = {
-								culture = ROOT
+								culture_group = ROOT
 								religion = ROOT
 							}
 						}
@@ -675,7 +675,7 @@ update_ass_points = {
 								target = THIS
 							}
 							NOT = {
-								culture = ROOT
+								culture_group = ROOT
 								religion = ROOT
 							}
 						}
@@ -698,7 +698,7 @@ update_ass_points = {
 								target = THIS
 							}
 							NOT = {
-								culture = ROOT
+								culture_group = ROOT
 								religion = ROOT
 							}
 						}
@@ -721,7 +721,7 @@ update_ass_points = {
 								target = THIS
 							}
 							NOT = {
-								culture = ROOT
+								culture_group = ROOT
 								religion = ROOT
 							}
 						}

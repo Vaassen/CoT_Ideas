@@ -13,7 +13,10 @@ has_ass_warning_issued = {
 }
 
 is_player = {
-	ai = no
+	OR = {
+		ai = no
+		was_player = yes
+	}
 }
 
 is_ass_ally = {

@@ -142,7 +142,7 @@
  adven_ide6_desc:0 "Branch offices all over the world let us send an army anywhere, to solve any quest."
  adven_ide7:0 "Lucky Soldiers"
  adven_ide7_desc:0 "Every twentieth man in our army is seemingly impossibly lucky, cutting down any foe before him."
- adventurer_ideas_bonus:0 "Completed Adventurer Ideas"
+ adventurer_ideas_vaass_bonus:0 "Completed Adventurer Ideas"
 
 #done
 leadership_ideas:0 "Leadership Ideas"
@@ -337,7 +337,7 @@ leadership_ideas_bonus:0 "Completed Leadership Ideas"
  print_culture:0 "The Spectre of Yesterday"
  print_culture_desc:0 "Gone is the glory of old yet we are hesitant to embrace the future, as if we were haunted by the world of the past. We must break the chains of stagnation by sponsoring the ideas of those who dare look beyond the present."
  optimism:0 "The Promise of Tomorrow"
- optimism_desc:0 "Every moment we stay still is a moment we fall behind. Let us recruit more scientists, build more schools, hire more advisors, innovate more, innovate faster, innovate better! We cannot stop the march of time, but we can certainly outpace it. \nArtifice Capacity §G+10§W"
+ optimism_desc:0 "Every moment we stay still is a moment we fall behind. Let us recruit more scientists, build more schools, hire more advisors, innovate more, innovate faster, innovate better! We cannot stop the march of time, but we can certainly outpace it. \nArtifice Capacity §G+10§b £blank"
  formalized_officer_corps:0 "Beacon of Civilization"
  formalized_officer_corps_desc:0 "We have become a land of the future, and those too advanced for their time are starting to take notice. We would be fools not to welcome them home."
  innovativeness_ideas_bonus:0 "Completed Technocratic Ideas"
@@ -450,7 +450,7 @@ leadership_ideas_bonus:0 "Completed Leadership Ideas"
  smithian_economics_desc:0 "Industrial specialization has yielded far greater benefits for our economy than expected. It is truly a revolution."
  economic_ideas_bonus:0 "Completed Industrial Ideas"
  
- #half the ideas here wont use their respective loc and i have no clue why, god has forsaken me 
+ #half the ideas here wont use their respective loc and i have no clue why, god has forsaken me
  expansion_ideas:0 "Frontier Ideas"
  expansion_ideas_bonus:0 "Completed Frontier Ideas"
  additional_colonists:0 "Adventurers Wanted!"
