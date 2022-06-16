@@ -1,0 +1,1175 @@
+update_ass_points = {
+	hidden_effect = {
+		set_variable = {
+			which = MaxAssPoints
+			value = 5
+		}
+		set_variable = {
+			which = UsedAssPointsMinor
+			value = 0
+		}
+		set_variable = {
+			which = UsedAssPointsMajor
+			value = 0
+		}
+		set_variable = {
+			which = UsedAssPointsVassalsUnder50
+			value = 0
+		}
+		set_variable = {
+			which = UsedAssPointsVassalOver50
+			value = 0
+		}
+		set_variable = {
+			which = UsedAssPointsPUUnder75
+			value = 0
+		}
+		set_variable = {
+			which = UsedAssPointsPUOver75
+			value = 0
+		}
+		set_variable = {
+			which = UsedAssPointsSameCultureAndReligion
+			value = 0
+		}
+		set_variable = {
+			which = UsedAssPointsSameCultureOrReligion
+			value = 0
+		}
+		set_variable = {
+			which = UsedAssPointsOtherCultureAndReligion
+			value = 0
+		}
+		set_variable = {
+			which = UsedAssPointsTotal
+			value = 0
+		}
+		set_variable = {
+			which = UsedAssPointsDifference
+			value = 0
+		}
+		
+		if = {
+			limit = { full_idea_group = influence_ideas } # benovelence
+			change_variable = {
+				which = MaxAssPoints
+				value = 1
+			}
+		}
+		
+		if = {
+			limit = { full_idea_group = diplomatic_ideas } # international
+			change_variable = {
+				which = MaxAssPoints
+				value = 2
+			}
+		}
+		if = {
+			limit = { full_idea_group = the_great_game }
+			change_variable = {
+				which = MaxAssPoints
+				value = 1
+			}
+		}
+		if = {
+			limit = { has_active_policy = vass_integrated_court_3 }
+			change_variable = {
+				which = MaxAssPoints
+				value = 1
+			}
+		}
+		if = {
+			limit = { is_emperor = yes }
+			change_variable = {
+				which = MaxAssPoints
+				value = 1
+			}
+		}
+		if = {
+			limit = { has_reform = raja_reform }
+			change_variable = {
+				which = MaxAssPoints
+				value = 1
+			}
+		}
+		if = {
+			limit = { owns_core_province = 475 }
+			change_variable = {
+				which = MaxAssPoints
+				value = 1
+			}
+		}
+		if = {
+			limit = { is_great_power = yes }
+			change_variable = {
+				which = MaxAssPoints
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = monstrous_nation
+				NOT = {
+					has_country_flag = semi_monstrous
+				}
+			}
+			change_variable = {
+				which = MaxAssPoints
+				value = -2
+			}
+		}
+		if = {
+			limit = { has_country_flag = semi_monstrous }
+			change_variable = {
+				which = MaxAssPoints
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = witch_king_flag
+					has_ruler_modifier = witch_king_modifier
+				}
+			}
+			change_variable = {
+				which = MaxAssPoints
+				value = -2
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = undead_military
+					has_country_flag = lich_ruler
+				}
+			}
+			change_variable = {
+				which = MaxAssPoints
+				value = -3
+			}
+		}
+		if = {
+			limit = { full_idea_group = spy_ideas }
+			change_variable = {
+				which = MaxAssPoints
+				value = -3
+			}
+		}
+		# Calc used points
+		# non-gps
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
+					}
+					amount = 1
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMinor
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
+					}
+					amount = 2
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMinor
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
+					}
+					amount = 3
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMinor
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
+					}
+					amount = 4
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMinor
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = no
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
+					}
+					amount = 5
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMinor
+				value = 2
+			}
+		}
+		
+		#gps
+		
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = yes
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
+					}
+					amount = 1
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMajor
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = yes
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
+					}
+					amount = 2
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMajor
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = yes
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
+					}
+					amount = 3
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMajor
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = yes
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
+					}
+					amount = 4
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMajor
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = yes
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+						}
+					}
+					amount = 5
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMajor
+				value = 3
+			}
+		}
+		
+		# same culture and religion
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							culture_group = ROOT
+							religion = ROOT
+						}
+					}
+					amount = 1
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsSameCultureAndReligion
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							culture_group = ROOT
+							religion = ROOT
+						}
+					}
+					amount = 2
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsSameCultureAndReligion
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							culture_group = ROOT
+							religion = ROOT
+						}
+					}
+					amount = 3
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsSameCultureAndReligion
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							culture_group = ROOT
+							religion = ROOT
+						}
+					}
+					amount = 4
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsSameCultureAndReligion
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							culture_group = ROOT
+							religion = ROOT
+						}
+					}
+					amount = 5
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsSameCultureAndReligion
+				value = -1
+			}
+		}
+		
+		## same culture or religion, but not at same time
+		
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							NOT = {
+								AND = {
+									culture_group = ROOT
+									religion = ROOT
+								}
+							}
+							OR = {
+								culture_group = ROOT
+								religion = ROOT
+							}
+						}
+					}
+					amount = 1
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsSameCultureOrReligion
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							NOT = {
+								AND = {
+									culture_group = ROOT
+									religion = ROOT
+								}
+							}
+							OR = {
+								culture_group = ROOT
+								religion = ROOT
+							}
+						}
+					}
+					amount = 2
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsSameCultureOrReligion
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							NOT = {
+								AND = {
+									culture_group = ROOT
+									religion = ROOT
+								}
+							}
+							OR = {
+								culture_group = ROOT
+								religion = ROOT
+							}
+						}
+					}
+					amount = 3
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsSameCultureOrReligion
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							NOT = {
+								AND = {
+									culture_group = ROOT
+									religion = ROOT
+								}
+							}
+							OR = {
+								culture_group = ROOT
+								religion = ROOT
+							}
+						}
+					}
+					amount = 4
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsSameCultureOrReligion
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							NOT = {
+								AND = {
+									culture_group = ROOT
+									religion = ROOT
+								}
+							}
+							OR = {
+								culture_group = ROOT
+								religion = ROOT
+							}
+						}
+					}
+					amount = 5
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsSameCultureOrReligion
+				value = 1
+			}
+		}
+		
+		# netiher culture nor religion
+		
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							NOT = {
+								culture_group = ROOT
+								religion = ROOT
+							}
+						}
+					}
+					amount = 1
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsOtherCultureAndReligion
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							NOT = {
+								culture_group = ROOT
+								religion = ROOT
+							}
+						}
+					}
+					amount = 2
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsOtherCultureAndReligion
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							NOT = {
+								culture_group = ROOT
+								religion = ROOT
+							}
+						}
+					}
+					amount = 3
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsOtherCultureAndReligion
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							NOT = {
+								culture_group = ROOT
+								religion = ROOT
+							}
+						}
+					}
+					amount = 4
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsOtherCultureAndReligion
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							NOT = {
+								culture_group = ROOT
+								religion = ROOT
+							}
+						}
+					}
+					amount = 5
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsOtherCultureAndReligion
+				value = 2
+			}
+		}
+		
+		#under 50% dev subjects
+		
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = no
+							is_player = yes
+							NOT = {
+								development_of_overlord_fraction = 0.5
+							}
+						}
+					}
+					amount = 1
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsVassalsUnder50
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = no
+							is_player = yes
+							NOT = {
+								development_of_overlord_fraction = 0.5
+							}
+						}
+					}
+					amount = 2
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsVassalsUnder50
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = no
+							is_player = yes
+							NOT = {
+								development_of_overlord_fraction = 0.5
+							}
+						}
+					}
+					amount = 3
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsVassalsUnder50
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = no
+							is_player = yes
+							NOT = {
+								development_of_overlord_fraction = 0.5
+							}
+						}
+					}
+					amount = 4
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsVassalsUnder50
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = no
+							is_player = yes
+							NOT = {
+								development_of_overlord_fraction = 0.5
+							}
+						}
+					}
+					amount = 5
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsVassalsUnder50
+				value = 1
+			}
+		}
+		
+		#over 50% dev subjects
+		
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = no
+							is_player = yes
+							development_of_overlord_fraction = 0.5
+						}
+					}
+					amount = 1
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsVassalOver50
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = no
+							is_player = yes
+							development_of_overlord_fraction = 0.5
+						}
+					}
+					amount = 2
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsVassalOver50
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = no
+							is_player = yes
+							development_of_overlord_fraction = 0.5
+						}
+					}
+					amount = 3
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsVassalOver50
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = no
+							is_player = yes
+							development_of_overlord_fraction = 0.5
+						}
+					}
+					amount = 4
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsVassalOver50
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = no
+							is_player = yes
+							development_of_overlord_fraction = 0.5
+						}
+					}
+					amount = 5
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsVassalOver50
+				value = 3
+			}
+		}
+		#under 75% dev PUs
+		
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = yes
+							is_player = yes
+							NOT = {
+								development_of_overlord_fraction = 0.75
+							}
+						}
+					}
+					amount = 1
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsPUUnder75
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = yes
+							is_player = yes
+							NOT = {
+								development_of_overlord_fraction = 0.75
+							}
+						}
+					}
+					amount = 2
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsPUUnder75
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = yes
+							is_player = yes
+							NOT = {
+								development_of_overlord_fraction = 0.75
+							}
+						}
+					}
+					amount = 3
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsPUUnder75
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = yes
+							is_player = yes
+							NOT = {
+								development_of_overlord_fraction = 0.75
+							}
+						}
+					}
+					amount = 4
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsPUUnder75
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = yes
+							is_player = yes
+							NOT = {
+								development_of_overlord_fraction = 0.75
+							}
+						}
+					}
+					amount = 5
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsPUUnder75
+				value = 1
+			}
+		}
+		
+		#over 75% dev PUs
+		
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = yes
+							is_player = yes
+							development_of_overlord_fraction = 0.75
+						}
+					}
+					amount = 1
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsPUOver75
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = yes
+							is_player = yes
+							development_of_overlord_fraction = 0.75
+						}
+					}
+					amount = 2
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsPUOver75
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = yes
+							is_player = yes
+							development_of_overlord_fraction = 0.75
+						}
+					}
+					amount = 3
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsPUOver75
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = yes
+							is_player = yes
+							development_of_overlord_fraction = 0.75
+						}
+					}
+					amount = 4
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsPUOver75
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						AND = {
+							is_lesser_in_union = yes
+							is_player = yes
+							development_of_overlord_fraction = 0.75
+						}
+					}
+					amount = 5
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsPUOver75
+				value = 3
+			}
+		}
+		
+		# sum up
+		change_variable = {
+			which = UsedAssPointsTotal
+			which = UsedAssPointsMinor
+		}
+		change_variable = {
+			which = UsedAssPointsTotal
+			which = UsedAssPointsMajor
+		}
+		change_variable = {
+			which = UsedAssPointsTotal
+			which = UsedAssPointsVassalsUnder50
+		}
+		change_variable = {
+			which = UsedAssPointsTotal
+			which = UsedAssPointsVassalOver50
+		}
+		change_variable = {
+			which = UsedAssPointsTotal
+			which = UsedAssPointsPUUnder75
+		}
+		change_variable = {
+			which = UsedAssPointsTotal
+			which = UsedAssPointsPUOver75
+		}
+		change_variable = {
+			which = UsedAssPointsTotal
+			which = UsedAssPointsSameCultureAndReligion
+		}
+		change_variable = {
+			which = UsedAssPointsTotal
+			which = UsedAssPointsSameCultureOrReligion
+		}
+		change_variable = {
+			which = UsedAssPointsTotal
+			which = UsedAssPointsOtherCultureAndReligion
+		}
+		change_variable = {
+			which = UsedAssPointsDifference
+			which = MaxAssPoints
+		}
+		subtract_variable = {
+			which = UsedAssPointsDifference
+			which = UsedAssPointsTotal
+		}
+	}
+}

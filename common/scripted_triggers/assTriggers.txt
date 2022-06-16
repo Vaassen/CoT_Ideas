@@ -1,0 +1,56 @@
+is_violating_ass = {
+	# ASS points are negative
+	NOT = {
+		check_variable = {
+			which = UsedAssPointsDifference
+			value = 0
+		}
+	}
+}
+
+has_ass_warning_issued = {
+	has_country_flag = AssViolationWarning
+}
+
+is_player = {
+	OR = {
+		ai = no
+		was_player = yes
+	}
+}
+
+is_ass_ally = {
+	# me - country that is currently checked
+	# target - any other country
+	# root scope - target
+	AND = {
+		is_player = yes
+		OR = {
+			alliance_with = $me$
+			guaranteed_by = $me$
+			is_supporting_independence_of = $me$
+			has_guaranteed = $me$
+			$me$ = {
+				is_supporting_independence_of = $target$
+			}
+		}
+	}
+}
+
+has_any_ass_ally = {
+	calc_true_if = {
+		all_known_country = {
+			OR = {
+				is_ass_ally = {
+					me = $me$
+					target = THIS
+				}
+				AND = {
+					is_subject_of = $me$
+					is_player = yes
+				}
+			}
+		}
+		amount = 1
+	}
+}
