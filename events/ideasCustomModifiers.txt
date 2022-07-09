@@ -50,3 +50,24 @@ country_event = {
 		}
 	}
 }
+# Blummens Arty Cap
+country_event = {
+	id = cot_ideasCustomModifiers.3
+	title = cot_ideasCustomModifiers.3.t
+	desc = cot_ideasCustomModifiers.3.d
+	hidden = yes
+	picture = POPE_PREACHING_eventPicture
+	
+	trigger = {
+		tag = J33
+	}
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = "ideasCustomModifiers.3.1"
+		set_country_flag = technocratic_optimism
+		change_variable = {
+			which = StaticArtificePoints
+			value = 30
+		}
+	}
+}
