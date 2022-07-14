@@ -341,7 +341,8 @@ diplomatic_ideas = { #international ideas #done
 	}
 	
 	bonus = {
-		trade_efficiency = 0.1
+        trade_efficiency = 0.1
+		imperial_authority = 0.34
 	}
 
 	foreign_embassies = {
@@ -391,7 +392,7 @@ spy_ideas = { #isolation ideas
 	
 	bonus = {
         trade_efficiency = 0.1
-		imperial_authority = 0.1
+		imperial_authority = 0.34
 	}
 
 	efficient_spies = {
@@ -439,7 +440,7 @@ maritime_ideas = { #trade fleet #done
 
 	bonus = {
         trade_efficiency = 0.1
-		imperial_authority = 0.1
+		imperial_authority = 0.34
 	}
 
 	merchant_traditions = {
@@ -510,7 +511,7 @@ naval_ideas = { #war fleet #done
 
 	bonus = {
         trade_efficiency = 0.1
-		imperial_authority = 0.1
+		imperial_authority = 0.34
 	}
 
 	boarding_parties = {
@@ -578,7 +579,7 @@ trade_ideas = { #mercantile #done
 
 	bonus = {
         trade_efficiency = 0.1
-		imperial_authority = 0.1
+		imperial_authority = 0.34
 	}
 
 	shrewd_commerce_practise = {
@@ -629,7 +630,7 @@ exploration_ideas = { #reclamation #done
 	
 	bonus = {
         trade_efficiency = 0.1
-		imperial_authority = 0.1
+		imperial_authority = 0.34
 	}
 
 	quest_for_the_new_world	= {
@@ -889,7 +890,7 @@ influence_ideas = { #benevolence #done
 
 	bonus = {
         trade_efficiency = 0.1
-		imperial_authority = 0.1
+		imperial_authority = 0.34
 	}
 
 	tribute_system = {
@@ -942,7 +943,7 @@ the_great_game = {
 
 	bonus = {
         trade_efficiency = 0.1
-		imperial_authority = 0.1
+		imperial_authority = 0.34
 	}
 
 	tgg1 = {
