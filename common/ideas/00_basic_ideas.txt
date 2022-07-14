@@ -342,7 +342,6 @@ diplomatic_ideas = { #international ideas #done
 	
 	bonus = {
 		trade_efficiency = 0.1
-		trade_steering = 0.1
 	}
 
 	foreign_embassies = {
@@ -367,7 +366,6 @@ diplomatic_ideas = { #international ideas #done
 	diplomatic_corps = {
 		country_diplomatic_power = 1
 		dip_tech_cost_modifier = -0.1
-		imperial_authority = 0.1
 	}
 
 	ai_will_do = {
@@ -392,8 +390,8 @@ spy_ideas = { #isolation ideas
 	}
 	
 	bonus = {
-		trade_efficiency = 0.1
-		trade_steering = 0.1
+        trade_efficiency = 0.1
+		imperial_authority = 0.1
 	}
 
 	efficient_spies = {
@@ -440,8 +438,8 @@ maritime_ideas = { #trade fleet #done
 	}
 
 	bonus = {
-		trade_efficiency = 0.1
-		trade_steering = 0.1
+        trade_efficiency = 0.1
+		imperial_authority = 0.1
 	}
 
 	merchant_traditions = {
@@ -451,19 +449,19 @@ maritime_ideas = { #trade fleet #done
 		leader_naval_manuever = 1
 	}
 	sheltered_ports = {
-		light_ship_cost = -0.25
+		global_ship_trade_power = 0.2
 	}
 	grand_navy = {
-		naval_forcelimit_modifier = 0.25
+		naval_forcelimit_modifier = 0.2
 	}
 	ships_penny = {
 		merchants = 1
 	}
 	sea_hawks = {
-		global_sailors_modifier =0.2
+		global_sailors_modifier = 0.2
 	}
 	naval_fighting_instruction = {
-		global_ship_trade_power = 0.4
+		global_ship_cost = -0.33
 	}
 
 
@@ -511,8 +509,8 @@ naval_ideas = { #war fleet #done
 	}
 
 	bonus = {
-		trade_efficiency = 0.1
-		trade_steering = 0.1
+        trade_efficiency = 0.1
+		imperial_authority = 0.1
 	}
 
 	boarding_parties = {
@@ -579,8 +577,8 @@ trade_ideas = { #mercantile #done
 	category = DIP
 
 	bonus = {
-		trade_efficiency = 0.1
-		trade_steering = 0.1
+        trade_efficiency = 0.1
+		imperial_authority = 0.1
 	}
 
 	shrewd_commerce_practise = {
@@ -591,20 +589,18 @@ trade_ideas = { #mercantile #done
   	}
 	merchant_adventures = {
 		merchants = 1
-		global_unrest = -1
 	}
 	national_trade_policy = {
-		caravan_power = 0.25
+		caravan_power = 0.2
 	}
 	overseas_merchants = {
 		trade_efficiency = 0.10
-		trade_range_modifier = 0.25
+		trade_range_modifier = 0.33
 	}
 	trade_manipulation = {
-		global_own_trade_power = 0.33
+		global_own_trade_power = 0.2
 	}
 	fast_negotiations = {
-		merchants = 1
 		center_of_trade_upgrade_cost = -0.5
 		mercantilism_cost = -0.50
 	}
@@ -632,8 +628,8 @@ exploration_ideas = { #reclamation #done
 	}
 	
 	bonus = {
-		trade_efficiency = 0.1
-		trade_steering = 0.1
+        trade_efficiency = 0.1
+		imperial_authority = 0.1
 	}
 
 	quest_for_the_new_world	= {
@@ -657,7 +653,7 @@ exploration_ideas = { #reclamation #done
 	}
 	global_empire = {
 		global_tariffs = 0.3
-		reduced_liberty_desire = 10
+		reduced_liberty_desire = 15
 		idea_claim_colonies = yes
 	}
 
@@ -892,8 +888,8 @@ influence_ideas = { #benevolence #done
 	category = DIP
 
 	bonus = {
-		trade_efficiency = 0.1
-		trade_steering = 0.1
+        trade_efficiency = 0.1
+		imperial_authority = 0.1
 	}
 
 	tribute_system = {
@@ -945,8 +941,8 @@ the_great_game = {
 	category = DIP
 
 	bonus = {
-		trade_efficiency = 0.1
-		trade_steering = 0.1
+        trade_efficiency = 0.1
+		imperial_authority = 0.1
 	}
 
 	tgg1 = {
@@ -959,7 +955,7 @@ the_great_game = {
 		ae_impact = -0.1
 	}
 	tgg4 = {
-		advisor_cost = -0.1
+		power_projection_from_insults = 1
 	}
 	tgg5 = {
 		diplomatic_annexation_cost = -0.15
@@ -970,8 +966,7 @@ the_great_game = {
 	}
 	tgg7 = {
 		max_absolutism = 30
-		power_projection_from_insults = 1
-		imperial_authority = 0.1
+		advisor_cost = -0.2
 	}
 	
 	ai_will_do = {
