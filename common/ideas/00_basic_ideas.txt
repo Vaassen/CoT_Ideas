@@ -312,7 +312,7 @@ aristocracy_ideas = { # cavalry #done
 		cavalry_cost = -0.15
 	}
 	international_nobility = {
-		cav_to_inf_ratio = 0.5
+		cav_to_inf_ratio = 2
 	}
 	noble_resilience = {
 		cavalry_power = 0.1
