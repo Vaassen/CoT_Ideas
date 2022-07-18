@@ -8,7 +8,7 @@ edict_promote_military_recruitment = {
 	}
 	
 	modifier = {
-		local_regiment_cost = -0.2
+		regiment_recruit_speed = -0.33
 	}
 	
 	color = {  188 90 27  }
