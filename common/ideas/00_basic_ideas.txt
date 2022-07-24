@@ -963,8 +963,8 @@ the_great_game = {
 		monarch_diplomatic_power = 1
 	}
 	tgg7 = {
-		max_absolutism = 20
-		advisor_cost = -0.2
+		max_absolutism = 15
+		advisor_cost = -0.15
 	}
 	
 	ai_will_do = {
