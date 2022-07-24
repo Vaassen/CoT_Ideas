@@ -121,7 +121,7 @@ at_standing = { #Army Type: Standing
 	}
 	at_sta7 = {
 		drill_gain_modifier = 1
-		drill_decay_modifier = -0.33
+		drill_decay_modifier = -0.25
 	}	
 
 	ai_will_do = {
@@ -258,10 +258,10 @@ defensive_ideas = { #staticWarfare #done
 	}
 
 	battlefield_commisions = {
-		artillery_bonus_vs_fort = 1
+		siege_ability = 0.1
 	}
 	military_drill = {
-		garrison_size = 0.33
+		garrison_size = 0.25
 	}
 	improved_manuever = {
 		hostile_attrition = 1
@@ -270,14 +270,14 @@ defensive_ideas = { #staticWarfare #done
 		land_morale = 0.1
 	}
 	defensive_mentality = {
-		defensiveness = 0.2
+		defensiveness = 0.33
 	}
 	supply_trains = {
-		fort_maintenance_modifier = -0.2
+		fort_maintenance_modifier = -0.33
 	}
 	improved_foraging = {
 		backrow_artillery_damage = 0.1
-		siege_ability = 0.1
+		artillery_bonus_vs_fort = 1
 	}
 
 	ai_will_do = {
@@ -295,16 +295,17 @@ aristocracy_ideas = { # cavalry #done
 	
 	noble_knights = {
 		cavalry_cost = -0.05
+		leader_land_manuever = 1
 	}
 	military_traditions = {
 		prestige_from_land = 1
 	}
 	local_nobility = {
-		leader_land_shock = 1
+		shock_damage = 0.1
 	}
 	serfdom = {
 		cavalry_flanking = 0.5
-		leader_land_manuever = 1
+		cavalry_power = 0.1
 	}
 	noble_officers = {
 		movement_speed = 0.1
@@ -313,8 +314,8 @@ aristocracy_ideas = { # cavalry #done
 		cav_to_inf_ratio = 2 #done so because of how paradox's battle mechanics are lmao
 	}
 	noble_resilience = {
-		cavalry_power = 0.2
-		cavalry_cost = -0.2
+		cavalry_power = 0.1
+		cavalry_cost = -0.33
 	}
 	
 
@@ -580,10 +581,10 @@ trade_ideas = { #mercantile #done
 	}
 
 	shrewd_commerce_practise = {
-		trade_steering = 0.075
+		global_trade_goods_size_modifier = 0.05
   	}
   	free_trade = {
-		global_trade_goods_size_modifier = 0.05
+		trade_range_modifier = 0.5
   	}
 	merchant_adventures = {
 		merchants = 1
@@ -592,8 +593,7 @@ trade_ideas = { #mercantile #done
 		caravan_power = 0.15
 	}
 	overseas_merchants = {
-		trade_efficiency = 0.10
-		trade_range_modifier = 0.5
+		trade_steering = 0.1
 	}
 	trade_manipulation = {
 		global_own_trade_power = 0.15
@@ -914,9 +914,8 @@ influence_ideas = { #benevolence #done
 		all_estate_loyalty_equilibrium = 0.05
 	}
 	marcher_lords = {
-		vassal_income = 0.5
-		improve_relation_modifier = 0.2
 		liberty_desire_from_subject_development = -0.5
+		diplomatic_annexation_cost = -0.15
 	}
 
 	ai_will_do = {
@@ -949,7 +948,7 @@ the_great_game = {
 	}
 	tgg2 = {
 		accept_vassalization_reasons = 10
-		spy_offence = 0.1
+		spy_offence = 0.15
 	}
 	tgg3 = {
 		ae_impact = -0.1
@@ -958,14 +957,14 @@ the_great_game = {
 		power_projection_from_insults = 1
 	}
 	tgg5 = {
-		diplomatic_annexation_cost = -0.15
+		diplomatic_annexation_cost = -0.1
 	}
 	tgg6 = {
 		monarch_diplomatic_power = 1
 	}
 	tgg7 = {
-		max_absolutism = 25
-		advisor_cost = -0.15
+		max_absolutism = 20
+		advisor_cost = -0.2
 	}
 	
 	ai_will_do = {
@@ -1006,8 +1005,8 @@ innovativeness_ideas = { #Technocratic Ideas
 		core_decay_on_your_own = 0.001
 	}
 	formalized_officer_corps = {
-		technology_cost = -0.1
-		innovativeness_gain = 0.2
+		technology_cost = -0.05
+		innovativeness_gain = 0.5
 		embracement_cost = -0.5
 	}
 
@@ -1152,11 +1151,11 @@ focus_inwards = {
 	}
 	foc_inw6 = {
 		state_governing_cost = -0.10
-		harmonization_speed = 0.25
+		harmonization_speed = 0.33
 	}
 	foc_inw7 = {
-		monthly_reform_progress = 0.25
-		monthly_reform_progress_modifier = 0.25
+		monthly_reform_progress = 0.2
+		monthly_reform_progress_modifier = 0.2
 		country_admin_power = 1
 	}
 	
