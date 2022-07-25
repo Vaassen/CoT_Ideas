@@ -30,7 +30,9 @@ vass_reform_the_goverment_1 = {
         }
     }
 
-	monthly_reform_progress_modifier = 0.20
+	monthly_reform_progress_modifier = 0.1
+	monthly_reform_progress = 0.15
+	yearly_corruption = 0.1
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -68,7 +70,7 @@ vass_increased_taxes_1 = {
     }
 
 	global_tax_modifier = 0.20
-	production_efficiency = 0.10
+	global_unrest = 1
 	
 	ai_will_do = {
 		factor = 1
@@ -125,7 +127,8 @@ vass_a_fair_pay_1 = {
         }
     }
 
-
+	all_estate_loyalty_equilibrium = 0.05
+	advisor_cost = 0.075
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -156,14 +159,17 @@ vass_building_spree_1 = {
 		NOT = {
         calc_true_if = {
             amount = 1
+            has_active_policy = vass_centralization_effort_1
+            has_active_policy = vass_centralization_effort_2
+            has_active_policy = vass_centralization_effort_3
             has_active_policy = vass_building_spree_2
             has_active_policy = vass_building_spree_3
             }
         }
     }
 
-	build_cost = -0.05
-	build_time = 0.10
+	build_cost = -0.1
+	build_time = 0.1
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -196,11 +202,17 @@ vass_centralization_effort_1 = {
             amount = 1
             has_active_policy = vass_centralization_effort_2
             has_active_policy = vass_centralization_effort_3
+            has_active_policy = vass_building_spree_1
+            has_active_policy = vass_building_spree_2
+            has_active_policy = vass_building_spree_3
             }
         }
     }
 
 	global_autonomy = -0.05
+	autonomy_change_time = -0.15
+	yearly_corruption = 0.025
+	harsh_treatment_cost = 0.15
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -240,7 +252,9 @@ vass_reform_the_goverment_2 = {
         }
     }
 
-	monthly_reform_progress_modifier = 0.33
+	monthly_reform_progress_modifier = 0.25
+	monthly_reform_progress = 0.30
+	yearly_corruption = 0.15
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -277,8 +291,8 @@ vass_increased_taxes_2 = {
         }
     }
 
-	global_tax_modifier = 0.30
-	production_efficiency = 0.15
+	global_tax_modifier = 0.35
+	global_unrest = 1.5
 	
 	ai_will_do = {
 		factor = 1
@@ -336,7 +350,8 @@ vass_a_fair_pay_2 = {
         }
     }
 
-
+	all_estate_loyalty_equilibrium = 0.075
+	advisor_cost = 0.10
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -368,15 +383,18 @@ vass_building_spree_2 = {
 		NOT = {
         calc_true_if = {
             amount = 1
+            has_active_policy = vass_centralization_effort_1
+            has_active_policy = vass_centralization_effort_2
+            has_active_policy = vass_centralization_effort_3
             has_active_policy = vass_building_spree_1
             has_active_policy = vass_building_spree_3
             }
         }
     }
 
-	build_cost = -0.10
+	build_cost = -0.15
 	build_time = 0.15
-
+	global_unrest = 1
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -409,11 +427,17 @@ vass_centralization_effort_2 = {
             amount = 1
             has_active_policy = vass_centralization_effort_1
             has_active_policy = vass_centralization_effort_3
+            has_active_policy = vass_building_spree_1
+            has_active_policy = vass_building_spree_2
+            has_active_policy = vass_building_spree_3
             }
         }
     }
 
 	global_autonomy = -0.075
+	autonomy_change_time = -0.25
+	yearly_corruption = 0.05
+	harsh_treatment_cost = 0.25
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -455,7 +479,9 @@ vass_reform_the_goverment_3 = {
         }
     }
 
-	monthly_reform_progress_modifier = 0.50
+	monthly_reform_progress_modifier = 0.3
+	monthly_reform_progress = 0.40
+	yearly_corruption = 0.2
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -494,7 +520,7 @@ vass_increased_taxes_3 = {
     }
 
 	global_tax_modifier = 0.50
-	production_efficiency = 0.25
+	global_unrest = 2
 	
 	ai_will_do = {
 		factor = 1
@@ -551,7 +577,8 @@ vass_a_fair_pay_3 = {
         }
     }
 
-
+	all_estate_loyalty_equilibrium = 0.10
+	advisor_cost = 0.15
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -582,14 +609,18 @@ vass_building_spree_3 = {
 		NOT = {
         calc_true_if = {
             amount = 1
+            has_active_policy = vass_centralization_effort_1
+            has_active_policy = vass_centralization_effort_2
+            has_active_policy = vass_centralization_effort_3
             has_active_policy = vass_building_spree_1
             has_active_policy = vass_building_spree_2
             }
         }
     }
 
-	build_cost = -0.15
+	build_cost = -0.2
 	build_time = 0.25
+	global_unrest = 1.5
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -629,7 +660,10 @@ vass_centralization_effort_3 = {
         }
     }
 
-	global_autonomy = -0.10
+	global_autonomy = -0.15
+	autonomy_change_time = -0.33
+	yearly_corruption = 0.1
+	harsh_treatment_cost = 0.50
 	
 	ai_will_do = {
 		factor = 0.8		
