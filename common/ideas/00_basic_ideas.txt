@@ -7,9 +7,6 @@
 quality_ideas = { #Shock & Awe #done
 	category = MIL
 
-	trigger = {
-		NOT = { has_idea_group = offensive_ideas } #Exclusive with The Grand Plan
-	}
 
 	bonus = {
 		discipline = 0.025
@@ -50,9 +47,6 @@ quality_ideas = { #Shock & Awe #done
 offensive_ideas = { #The Great Plan
 	category = MIL
 
-	trigger = {
-		NOT = { has_idea_group = quality_ideas } #Exclusive with Shock & Awe
-	}
 
 	bonus = {
 		discipline = 0.025
@@ -252,6 +246,11 @@ leadership_ideas = { #leadership #done
 defensive_ideas = { #staticWarfare #done
 	category = MIL
 
+	trigger = {
+		NOT = {
+			has_idea_group = aristocracy_ideas
+		}
+	}
 	bonus = {
 		discipline = 0.025
 		special_unit_forcelimit= 0.025
@@ -287,6 +286,12 @@ defensive_ideas = { #staticWarfare #done
 
 aristocracy_ideas = { # cavalry #done
 	category = MIL
+
+	trigger = {
+		NOT = {
+			has_idea_group = defensive_ideas
+		}
+	}
 
 	bonus = {
 		discipline = 0.025
