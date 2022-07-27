@@ -8,7 +8,7 @@ edict_encourage_development = {
 	}
 	
 	modifier = {
-		build_cost = -0.1
+		local_build_cost = -0.1
 	}
 	
 	color = {  244 184 12  }
