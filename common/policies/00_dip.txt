@@ -345,7 +345,7 @@ vass_a_grand_court_2 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
-		amount = 1
+		amount = 2
 		}
 		NOT = {
         calc_true_if = {
@@ -568,7 +568,7 @@ vass_a_grand_court_3 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
-		amount = 1
+		amount = 3
 		}
 		NOT = {
         calc_true_if = {
