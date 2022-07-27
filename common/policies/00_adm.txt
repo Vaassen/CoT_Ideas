@@ -244,7 +244,7 @@ vass_tighten_the_belt_1 = {
         }
     }
 
-	inflation_reduction = -0.01
+	inflation_reduction = -0.10
 	interest = -0.25
 	
 	ai_will_do = {
