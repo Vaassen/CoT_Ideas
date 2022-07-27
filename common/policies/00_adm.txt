@@ -203,7 +203,7 @@ vass_reduce_inflation_1 = {
         }
     }
 
-	inflation_reduction = -0.01
+	inflation_reduction = 0.01
 	interest = 0.25
 	
 	ai_will_do = {
@@ -244,7 +244,7 @@ vass_tighten_the_belt_1 = {
         }
     }
 
-	inflation_reduction = 0.01
+	inflation_reduction = -0.01
 	interest = -0.25
 	
 	ai_will_do = {
@@ -459,7 +459,7 @@ vass_reduce_inflation_2 = {
         }
     }
 
-	inflation_reduction = -0.015
+	inflation_reduction = 0.015
 	interest = 0.50
 	
 	ai_will_do = {
@@ -486,7 +486,7 @@ vass_tighten_the_belt_2 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		amount = 1
+		amount = 2
 		}
 		NOT = {
         calc_true_if = {
@@ -500,7 +500,7 @@ vass_tighten_the_belt_2 = {
         }
     }
 
-	inflation_reduction = 0.25
+	inflation_reduction = -0.15
 	interest = -0.50
 	
 	ai_will_do = {
@@ -719,7 +719,7 @@ vass_reduce_inflation_3 = {
         }
     }
 
-	inflation_reduction = -0.25
+	inflation_reduction = 0.25
 	interest = 1
 	
 	ai_will_do = {
@@ -746,7 +746,7 @@ vass_tighten_the_belt_3 = {
 		full_idea_group = economic_ideas
 		full_idea_group = logistical_ideas
 		full_idea_group = expansion_ideas
-		amount = 1
+		amount = 3
 		}
 		NOT = {
         calc_true_if = {
@@ -760,7 +760,7 @@ vass_tighten_the_belt_3 = {
         }
     }
 
-	inflation_reduction = 0.25
+	inflation_reduction = -0.25
 	interest = -1
 	
 	ai_will_do = {
