@@ -459,7 +459,7 @@ vass_reduce_inflation_2 = {
         }
     }
 
-	inflation_reduction = 0.015
+	inflation_reduction = 0.15
 	interest = 0.50
 	
 	ai_will_do = {
