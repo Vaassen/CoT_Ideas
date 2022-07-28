@@ -470,7 +470,7 @@ vass_tighten_the_belt_2 = {
 	monarch_power = ADM
 
 	potential = {
-		adm_tech = 3
+		adm_tech = 10
 	}
 	
 	allow = {
@@ -730,7 +730,7 @@ vass_tighten_the_belt_3 = {
 	monarch_power = ADM
 
 	potential = {
-		adm_tech = 3
+		adm_tech = 17
 	}
 	
 	allow = {
