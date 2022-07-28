@@ -2081,7 +2081,6 @@ expanded_infrastructure = {
 	local_ship_repair = 0.05
 	local_autonomy = -0.005
 	local_build_cost = -0.05
-	local_build_time = -0.05
 	province_trade_power_modifier = 0.05
 	trade_goods_size_modifier = 0.05
 	local_governing_cost = 0.25
