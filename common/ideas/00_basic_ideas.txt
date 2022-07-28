@@ -111,7 +111,7 @@ at_standing = { #Army Type: Standing
 		artillery_power = 0.05
 	}
 	at_sta6 = {	
-		yearly_army_professionalism = 0.0033
+		yearly_army_professionalism = 0.01
 	}
 	at_sta7 = {
 		drill_gain_modifier = 1
