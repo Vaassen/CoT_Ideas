@@ -1347,11 +1347,11 @@ low_army_professionalism = {
 }
 
 high_army_professionalism = {
-	fire_damage = 0.2
-	shock_damage = 0.2
-	siege_ability = 0.5
+	fire_damage = 0.33
+	shock_damage = 0.33
+	siege_ability = 0.33
 	drill_decay_modifier = -0.5
-	global_manpower_modifier = -0.4
+	global_manpower_modifier = -0.5
 }
 
 streltsy_modifier = {
@@ -1983,7 +1983,7 @@ regiment_drill_modifier = { # Used by individual regiments
 }
 
 army_drill_modifier = { # Used by an entire army, is the average of all subunits drill
-	movement_speed = 0.3
+	movement_speed = 0.25
 }
 
 janissary_regiment = {
