@@ -121,8 +121,8 @@ in_state = {
 
 in_capital_state = {
 	local_institution_spread = 0.05
-	local_state_maintenance_modifier = -0.5
-	local_governing_cost = -1.0
+	local_state_maintenance_modifier = -2
+	local_governing_cost = -10.0
 }
 
 coastal = {
@@ -2066,6 +2066,13 @@ at_peace_revolutionary = { # Applied if at peace while reactionaries are borderi
 	yearly_revolutionary_zeal = -4
 }
 
+centralize_state = {
+	statewide_governing_cost = -0.50
+	local_prosperity_growth = 0.25
+	local_state_maintenance_modifier = -0.25
+	picture = "centralize_state"
+}
+
 expanded_infrastructure = {
 	allowed_num_of_buildings = 1
 	allowed_num_of_manufactories = 1
@@ -2082,15 +2089,8 @@ expanded_infrastructure = {
 	local_autonomy = -0.01
 	province_trade_power_modifier = 0.1
 	trade_goods_size_modifier = 0.1
-	local_governing_cost = 0.50
+	local_governing_cost = 0.5
 	local_great_project_upgrade_cost = -0.1
-}
-
-centralize_state = {
-	statewide_governing_cost = -0.50
-	local_prosperity_growth = 0.25
-	local_state_maintenance_modifier = -0.25
-	picture = "centralize_state"
 }
 
 # Applied once for each guru teaching
