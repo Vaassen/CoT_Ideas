@@ -121,8 +121,8 @@ in_state = {
 
 in_capital_state = {
 	local_institution_spread = 0.05
-	local_state_maintenance_modifier = -0.5
-	local_governing_cost = -1.0
+	local_state_maintenance_modifier = -2
+	local_governing_cost = -10.0
 }
 
 coastal = {
@@ -448,9 +448,9 @@ devastation = {
 }
 
 prosperity = {
-	local_development_cost = -0.1
-	trade_goods_size_modifier = 0.25
-	local_autonomy = -0.05
+	local_development_cost = -0.15
+	trade_goods_size_modifier = 0.33
+	local_autonomy = -0.1
 }
 
 slaves_raided = {
@@ -1342,15 +1342,15 @@ absolutism = {
 }
 
 low_army_professionalism = {
-	mercenary_cost = -0.15
-	mercenary_manpower = 0.15
+    global_regiment_cost = -0.2
 }
 
 high_army_professionalism = {
-	fire_damage = 0.1
-	shock_damage = 0.1
-	siege_ability = 0.2
+	fire_damage = 0.33
+	shock_damage = 0.33
+	siege_ability = 0.33
 	drill_decay_modifier = -0.5
+	global_manpower_modifier = -0.5
 }
 
 streltsy_modifier = {
@@ -1542,7 +1542,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.01
+	yearly_army_professionalism = 0.02
 }
 
 ##################################################################################################
@@ -1975,14 +1975,14 @@ true_school_scholar_modifier = {
 # Regiment Types Modifiers
 ########################################
 regiment_drill_modifier = { # Used by individual regiments
-	shock_damage = 0.1
-	fire_damage = 0.1
-	fire_damage_received = -0.25
-	shock_damage_received = -0.25
+	shock_damage = 0.25
+	fire_damage = 0.25
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
 }
 
 army_drill_modifier = { # Used by an entire army, is the average of all subunits drill
-	movement_speed = 0.2
+	movement_speed = 0.25
 }
 
 janissary_regiment = {
@@ -2066,34 +2066,31 @@ at_peace_revolutionary = { # Applied if at peace while reactionaries are borderi
 	yearly_revolutionary_zeal = -4
 }
 
+centralize_state = {
+	statewide_governing_cost = -0.50
+	local_prosperity_growth = 0.25
+	local_state_maintenance_modifier = -0.25
+	picture = "centralize_state"
+}
+
 expanded_infrastructure = {
 	allowed_num_of_buildings = 1
 	allowed_num_of_manufactories = 1
-	regiment_recruit_speed = -0.15
-	ship_recruit_speed = -0.15
-	local_defensiveness = 0.05
-	garrison_growth = 0.05
-	local_development_cost = -0.05
-	local_production_efficiency = 0.05
+	regiment_recruit_speed = -0.1
+	ship_recruit_speed = -0.1
+	local_defensiveness = 0.1
+	garrison_growth = 0.1
+	local_development_cost = -0.1
+	local_production_efficiency = 0.1
 	local_tax_modifier = 0.1
-	local_manpower_modifier = 0.05
-	local_sailors_modifier = 0.05
-	local_ship_repair = 0.05
-	local_autonomy = -0.005
-	local_build_cost = -0.05
-	local_build_time = -0.05
-	province_trade_power_modifier = 0.05
-	trade_goods_size_modifier = 0.05
-	local_governing_cost_increase = 15
-	local_governing_cost = 0.1
-	local_great_project_upgrade_cost = -0.05
-}
-
-centralize_state = {
-	statewide_governing_cost = -0.25
-	local_prosperity_growth = 0.1
-	local_state_maintenance_modifier = -0.2
-	picture = "centralize_state"
+	local_manpower_modifier = 0.1
+	local_sailors_modifier = 0.1
+	local_ship_repair = 0.1
+	local_autonomy = -0.01
+	province_trade_power_modifier = 0.1
+	trade_goods_size_modifier = 0.1
+	local_governing_cost = 0.5
+	local_great_project_upgrade_cost = -0.1
 }
 
 # Applied once for each guru teaching
