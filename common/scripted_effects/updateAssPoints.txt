@@ -29,18 +29,6 @@ update_ass_points = {
 			value = 0
 		}
 		set_variable = {
-			which = UsedAssPointsSameCultureAndReligion
-			value = 0
-		}
-		set_variable = {
-			which = UsedAssPointsSameCultureOrReligion
-			value = 0
-		}
-		set_variable = {
-			which = UsedAssPointsOtherCultureAndReligion
-			value = 0
-		}
-		set_variable = {
 			which = UsedAssPointsTotal
 			value = 0
 		}
@@ -156,6 +144,25 @@ update_ass_points = {
 				value = -3
 			}
 		}
+		if = {
+			limit = {
+				has_country_flag = has_vampires_estate
+			}
+			change_variable = {
+				which = MaxAssPoints
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_vampires_organization_vampires_lord
+			}
+			change_variable = {
+				which = MaxAssPoints
+				value = -1
+			}
+		}
+
 		# Calc used points
 		# non-gps
 		if = {
@@ -778,18 +785,6 @@ update_ass_points = {
 		change_variable = {
 			which = UsedAssPointsTotal
 			which = UsedAssPointsPUOver75
-		}
-		change_variable = {
-			which = UsedAssPointsTotal
-			which = UsedAssPointsSameCultureAndReligion
-		}
-		change_variable = {
-			which = UsedAssPointsTotal
-			which = UsedAssPointsSameCultureOrReligion
-		}
-		change_variable = {
-			which = UsedAssPointsTotal
-			which = UsedAssPointsOtherCultureAndReligion
 		}
 		change_variable = {
 			which = UsedAssPointsDifference
