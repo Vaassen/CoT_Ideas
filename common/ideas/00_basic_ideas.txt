@@ -316,11 +316,7 @@ aristocracy_ideas = { # cavalry #done
 		movement_speed = 0.1
 	}
 	international_nobility = {
-<<<<<<< HEAD
-		cav_to_inf_ratio = 2
-=======
 		cav_to_inf_ratio = 2 #done so because of how paradox's battle mechanics are lmao
->>>>>>> New-Campaign
 	}
 	noble_resilience = {
 		cavalry_power = 0.1
