@@ -7739,17 +7739,42 @@ on_province_owner_change = {
 		limit = {
 			province_group = hold_province
 			OR = {
-				owner = { primary_culture = black_orc }
-				FROM = { primary_culture = black_orc }
+				owner = { 
+					OR = {
+						primary_culture = black_orc
+						primary_culture = varasok_orc
+					}
+				}
+				FROM = { 
+					OR = {
+						primary_culture = black_orc
+						primary_culture = varasok_orc
+					} 
+				}
+
 			}
 			continent = serpentspine
 		}
 		if = {
-			limit = { owner = { primary_culture = black_orc } }
+			limit = { 
+				owner = { 
+					OR = {
+						primary_culture = black_orc
+						primary_culture = varasok_orc
+					} 
+				} 
+			}
 			province_event = { id = diggy.124 days = 1 random = 30 } #so multiples don't get stuck
 		}
 		if = {
-			limit = { FROM = { primary_culture = black_orc } }
+			limit = { 
+				FROM = { 
+					OR = {
+						primary_culture = black_orc
+						primary_culture = varasok_orc
+					} 
+				} 
+			}
 			trigger_switch = {
 				on_trigger = province_id
 
