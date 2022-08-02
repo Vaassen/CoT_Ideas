@@ -4263,6 +4263,19 @@ on_bi_yearly_pulse = {
 		### COT CHANGE ###
 		cot_ideasCustomModifiers.2
 	}
+	if = {
+		limit = {
+			V08 = {
+				has_country_flag = seiranar_is_emperor
+			}
+		}
+		all_country = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			seiran_events.16
+		}
+	}
 	if = { limit = { ruler_can_revive = yes } save_ruler_stats = yes }
 	if = { limit = { capital = 4411 has_reform = raja_reform } country_event = { id = rahenraj.2000 days = 365 } }
 	if = {
