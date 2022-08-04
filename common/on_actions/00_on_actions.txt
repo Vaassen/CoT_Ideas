@@ -2994,6 +2994,7 @@ on_monarch_death = {
 		ogre.25 #Rancor is killed
 		flavor_azjakuma.34	#removes magic study modifier
 		flavor_dhenijanraj.10 #Bim Lau Restoration Burial
+		cot_rp_events.1 #Cot Change
 	}
 	country_event = { id = vampires_estate_events.13  days = 1 } # Revival
 	country_event = { id = magic_misc_events.4 days = 60 } #Undead Army
