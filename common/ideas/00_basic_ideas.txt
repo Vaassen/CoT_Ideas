@@ -299,17 +299,16 @@ aristocracy_ideas = { # cavalry #done
 	}
 	
 	noble_knights = {
-		cavalry_cost = -0.05
-		leader_land_manuever = 1
-	}
-	military_traditions = {
 		cavalry_power = 0.05
 	}
+	military_traditions = {
+		leader_land_manuever = 1
+	}
 	local_nobility = {
-		shock_damage = 0.1
+		movement_speed = 0.1
 	}
 	serfdom = {
-		cavalry_flanking = 0.5
+		cavalry_flanking = 0.25
 		cavalry_cost = -0.1
 	}
 	noble_officers = {
@@ -319,8 +318,8 @@ aristocracy_ideas = { # cavalry #done
 		cavalry_cost = -0.1
 	}
 	noble_resilience = {
-		movement_speed = 0.2
-		cav_to_inf_ratio = 2 #done so because of how paradox's battle mechanics are lmao
+		leader_land_shock = 1
+		cav_to_inf_ratio = 1 #done so because of how paradox's battle mechanics are lmao
 	}
 	
 
