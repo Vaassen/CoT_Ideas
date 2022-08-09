@@ -162,6 +162,24 @@ update_ass_points = {
 				value = -1
 			}
 		}
+		if = {
+			limit = {
+				has_country_modifier = assPoints_one
+			}
+			change_variable = {
+				which = MaxAssPoints
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = assPoints_two
+			}
+			change_variable = {
+				which = MaxAssPoints
+				value = 2
+			}
+		}
 
 		# Calc used points
 		# non-gps

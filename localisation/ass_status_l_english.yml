@@ -8,3 +8,5 @@
  assPoints.4.t:0 "$COUNTRY$ violated ASS rules and didn't fix them when asked politely"
  assPoints.4.d:0 "He should be ashamed of his behaviour and apologize to every player. "
  assPoints.4.1:0 "Shame! Shame! Shame!"
+ assPoints_one:0 "+1 ASS Point"
+ assPoints_two:0 "+2 ASS Points"
