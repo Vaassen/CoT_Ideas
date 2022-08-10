@@ -122,7 +122,7 @@ in_state = {
 in_capital_state = {
 	local_institution_spread = 0.05
 	local_state_maintenance_modifier = -2
-	local_governing_cost = -10.0
+	local_governing_cost = -9.9
 }
 
 coastal = {
@@ -2068,7 +2068,7 @@ at_peace_revolutionary = { # Applied if at peace while reactionaries are borderi
 }
 
 centralize_state = {
-	statewide_governing_cost = -0.50
+	statewide_governing_cost = -0.25
 	local_prosperity_growth = 0.25
 	local_state_maintenance_modifier = -0.25
 	local_development_cost = -0.1
@@ -2091,7 +2091,7 @@ expanded_infrastructure = {
 	local_autonomy = -0.01
 	province_trade_power_modifier = 0.1
 	trade_goods_size_modifier = 0.1
-	local_governing_cost = 0.5
+	local_governing_cost = 0.25
 	local_great_project_upgrade_cost = -0.1
 }
 
