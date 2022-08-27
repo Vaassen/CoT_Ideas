@@ -17,15 +17,7 @@ update_ass_points = {
 			value = 0
 		}
 		set_variable = {
-			which = UsedAssPointsVassalOver50
-			value = 0
-		}
-		set_variable = {
 			which = UsedAssPointsPUUnder75
-			value = 0
-		}
-		set_variable = {
-			which = UsedAssPointsPUOver75
 			value = 0
 		}
 		set_variable = {
@@ -388,7 +380,7 @@ update_ass_points = {
 		}
 
 		
-		#under 50% dev subjects
+		#Vassals
 		
 		if = {
 			limit = {
@@ -397,9 +389,6 @@ update_ass_points = {
 						AND = {
 							is_lesser_in_union = no
 							is_player = yes
-							NOT = {
-								development_of_overlord_fraction = 0.5
-							}
 						}
 					}
 					amount = 1
@@ -407,7 +396,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsVassalsUnder50
-				value = 1
+				value = 2
 			}
 		}
 		if = {
@@ -417,9 +406,6 @@ update_ass_points = {
 						AND = {
 							is_lesser_in_union = no
 							is_player = yes
-							NOT = {
-								development_of_overlord_fraction = 0.5
-							}
 						}
 					}
 					amount = 2
@@ -427,7 +413,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsVassalsUnder50
-				value = 1
+				value = 2
 			}
 		}
 		if = {
@@ -437,9 +423,6 @@ update_ass_points = {
 						AND = {
 							is_lesser_in_union = no
 							is_player = yes
-							NOT = {
-								development_of_overlord_fraction = 0.5
-							}
 						}
 					}
 					amount = 3
@@ -447,7 +430,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsVassalsUnder50
-				value = 1
+				value = 2
 			}
 		}
 		if = {
@@ -457,9 +440,6 @@ update_ass_points = {
 						AND = {
 							is_lesser_in_union = no
 							is_player = yes
-							NOT = {
-								development_of_overlord_fraction = 0.5
-							}
 						}
 					}
 					amount = 4
@@ -467,7 +447,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsVassalsUnder50
-				value = 1
+				value = 2
 			}
 		}
 		if = {
@@ -477,9 +457,6 @@ update_ass_points = {
 						AND = {
 							is_lesser_in_union = no
 							is_player = yes
-							NOT = {
-								development_of_overlord_fraction = 0.5
-							}
 						}
 					}
 					amount = 5
@@ -487,104 +464,10 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsVassalsUnder50
-				value = 1
+				value = 2
 			}
 		}
-		
-		#over 50% dev subjects
-		
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						AND = {
-							is_lesser_in_union = no
-							is_player = yes
-							development_of_overlord_fraction = 0.5
-						}
-					}
-					amount = 1
-				}
-			}
-			change_variable = {
-				which = UsedAssPointsVassalOver50
-				value = 3
-			}
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						AND = {
-							is_lesser_in_union = no
-							is_player = yes
-							development_of_overlord_fraction = 0.5
-						}
-					}
-					amount = 2
-				}
-			}
-			change_variable = {
-				which = UsedAssPointsVassalOver50
-				value = 3
-			}
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						AND = {
-							is_lesser_in_union = no
-							is_player = yes
-							development_of_overlord_fraction = 0.5
-						}
-					}
-					amount = 3
-				}
-			}
-			change_variable = {
-				which = UsedAssPointsVassalOver50
-				value = 3
-			}
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						AND = {
-							is_lesser_in_union = no
-							is_player = yes
-							development_of_overlord_fraction = 0.5
-						}
-					}
-					amount = 4
-				}
-			}
-			change_variable = {
-				which = UsedAssPointsVassalOver50
-				value = 3
-			}
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						AND = {
-							is_lesser_in_union = no
-							is_player = yes
-							development_of_overlord_fraction = 0.5
-						}
-					}
-					amount = 5
-				}
-			}
-			change_variable = {
-				which = UsedAssPointsVassalOver50
-				value = 3
-			}
-		}
-		#under 75% dev PUs
-		
+		#PUs
 		if = {
 			limit = {
 				calc_true_if = {
@@ -592,9 +475,6 @@ update_ass_points = {
 						AND = {
 							is_lesser_in_union = yes
 							is_player = yes
-							NOT = {
-								development_of_overlord_fraction = 0.75
-							}
 						}
 					}
 					amount = 1
@@ -602,7 +482,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsPUUnder75
-				value = 1
+				value = 2
 			}
 		}
 		if = {
@@ -612,9 +492,6 @@ update_ass_points = {
 						AND = {
 							is_lesser_in_union = yes
 							is_player = yes
-							NOT = {
-								development_of_overlord_fraction = 0.75
-							}
 						}
 					}
 					amount = 2
@@ -622,7 +499,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsPUUnder75
-				value = 1
+				value = 2
 			}
 		}
 		if = {
@@ -632,9 +509,6 @@ update_ass_points = {
 						AND = {
 							is_lesser_in_union = yes
 							is_player = yes
-							NOT = {
-								development_of_overlord_fraction = 0.75
-							}
 						}
 					}
 					amount = 3
@@ -642,7 +516,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsPUUnder75
-				value = 1
+				value = 2
 			}
 		}
 		if = {
@@ -652,9 +526,6 @@ update_ass_points = {
 						AND = {
 							is_lesser_in_union = yes
 							is_player = yes
-							NOT = {
-								development_of_overlord_fraction = 0.75
-							}
 						}
 					}
 					amount = 4
@@ -662,7 +533,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsPUUnder75
-				value = 1
+				value = 2
 			}
 		}
 		if = {
@@ -672,9 +543,6 @@ update_ass_points = {
 						AND = {
 							is_lesser_in_union = yes
 							is_player = yes
-							NOT = {
-								development_of_overlord_fraction = 0.75
-							}
 						}
 					}
 					amount = 5
@@ -682,100 +550,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsPUUnder75
-				value = 1
-			}
-		}
-		
-		#over 75% dev PUs
-		
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						AND = {
-							is_lesser_in_union = yes
-							is_player = yes
-							development_of_overlord_fraction = 0.75
-						}
-					}
-					amount = 1
-				}
-			}
-			change_variable = {
-				which = UsedAssPointsPUOver75
-				value = 3
-			}
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						AND = {
-							is_lesser_in_union = yes
-							is_player = yes
-							development_of_overlord_fraction = 0.75
-						}
-					}
-					amount = 2
-				}
-			}
-			change_variable = {
-				which = UsedAssPointsPUOver75
-				value = 3
-			}
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						AND = {
-							is_lesser_in_union = yes
-							is_player = yes
-							development_of_overlord_fraction = 0.75
-						}
-					}
-					amount = 3
-				}
-			}
-			change_variable = {
-				which = UsedAssPointsPUOver75
-				value = 3
-			}
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						AND = {
-							is_lesser_in_union = yes
-							is_player = yes
-							development_of_overlord_fraction = 0.75
-						}
-					}
-					amount = 4
-				}
-			}
-			change_variable = {
-				which = UsedAssPointsPUOver75
-				value = 3
-			}
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						AND = {
-							is_lesser_in_union = yes
-							is_player = yes
-							development_of_overlord_fraction = 0.75
-						}
-					}
-					amount = 5
-				}
-			}
-			change_variable = {
-				which = UsedAssPointsPUOver75
-				value = 3
+				value = 2
 			}
 		}
 		
@@ -794,15 +569,7 @@ update_ass_points = {
 		}
 		change_variable = {
 			which = UsedAssPointsTotal
-			which = UsedAssPointsVassalOver50
-		}
-		change_variable = {
-			which = UsedAssPointsTotal
 			which = UsedAssPointsPUUnder75
-		}
-		change_variable = {
-			which = UsedAssPointsTotal
-			which = UsedAssPointsPUOver75
 		}
 		change_variable = {
 			which = UsedAssPointsDifference
