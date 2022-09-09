@@ -1,0 +1,80 @@
+﻿namespace = CoT_i_events #i = ideas
+
+
+# Monarchy - Improving of Heir, part one
+country_event = {
+	
+	id = CoT_i_events.1
+	title = CoT_i_events.1.t
+	desc = CoT_i_events.1.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+	
+	trigger = {
+		AND = {
+		heir_age = 15
+		has_idea = civil_servants
+		#OR = {
+		#	NOT = {
+		#		has_regency = yes
+		#	}
+        #
+		#	has_consort_regency = yes
+		#}
+		NOT = {
+			has_heir_flag = CoT_heir_improved_events.1
+		}
+		}
+	}
+
+	immediate = {
+		set_heir_flag = CoT_heir_improved_events.1
+	}
+
+	option = {
+		name = CoT_i_events.1.a
+		change_heir_adm = 1
+	}
+
+	option = {
+		name = CoT_i_events.1.b
+		change_heir_dip = 1
+	}
+
+	option = {
+		name = CoT_i_events.1.c
+		change_heir_mil = 1
+	}
+
+	after = {
+		country_event = {
+			id = CoT_i_events.2
+			days = 1
+		}
+	}
+}
+
+# Monarchy - Improving of Heir, part two
+country_event = {
+	
+	id = CoT_i_events.2
+	title = CoT_i_events.2.t
+	desc = CoT_i_events.2.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = CoT_i_events.2.a
+		change_heir_adm = 1
+	}
+
+	option = {
+		name = CoT_i_events.2.b
+		change_heir_dip = 1
+	}
+
+	option = {
+		name = CoT_i_events.2.c
+		change_heir_mil = 1
+	}
+}
