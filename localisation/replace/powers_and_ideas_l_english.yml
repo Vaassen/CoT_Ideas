@@ -199,7 +199,7 @@ leadership_ideas_bonus:0 "Completed Leadership Ideas"
  diplomatic_ideas_bonus:0 "Completed International Ideas"
  
  #done
- spy_ideas:0 "Isolation Ideas [-3] §R***§!"
+ spy_ideas:0 "Isolation Ideas [-9] §R***§!"
  efficient_spies:0 "Splendid Isolation"
  efficient_spies_desc:0 "No outsider could even grasp our way of life, as such they cannot advise us as well as our own people."
  agent_training:0 "Closed Society"
@@ -429,7 +429,7 @@ leadership_ideas_bonus:0 "Completed Leadership Ideas"
  administrative_efficiency_idea:0 "Born to Rule"
  administrative_efficiency_idea_desc:0 "Our line is born to rule - no wonder we are so good at it."
  civil_servants:0 "Learning from the Past"
- civil_servants_desc:0 "The empires of yore will teach you to rule."
+ civil_servants_desc:0 "The empires of yore will teach you to rule. \nEnables §GHeir Improvement Mechanics§b"
  administrative_ideas_bonus:0 "Completed Government: Monarchy"
  
  #done
