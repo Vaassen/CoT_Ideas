@@ -78,3 +78,36 @@ country_event = {
 		change_heir_mil = 1
 	}
 }
+
+#Number of Buildings +1
+
+country_event = {
+	id = CoT_i_events.3
+	title = CoT_i_events.3.t
+	desc = CoT_i_events.3.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		AND = {
+			has_idea = foc_inw6
+			NOT = {
+				all_owned_province = {
+					has_province_modifier = focus_inwards_6
+				}
+			}
+		}
+	}
+
+	option = {
+		name = CoT_i_events.3.a
+		every_owned_province = {
+			add_province_modifier = {
+				name = focus_inwards_6
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+}
