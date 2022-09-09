@@ -1153,7 +1153,7 @@ focus_inwards = {
 		country_admin_power = 1
 	}
 	foc_inw6 = {
-		#Global +1 Building slot
+		allowed_num_of_buildings = 1 #Doesnt to Anything but works as a good Tooltip and Icon
 	}
 	foc_inw7 = {
 		monthly_reform_progress = 0.15
