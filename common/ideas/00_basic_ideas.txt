@@ -1608,7 +1608,7 @@ capital_ideas = { #capital ideas, all bonuses are lost and removed if the Idea G
 	}
 
 	capital_idea1 = { #Humble Beginings
-		defensiveness = 0.15 #new
+		build_cost = 0.05 #new
 	}
 	capital_idea2 = { #Home is where Home is
 		#Capital State gets +5 Local Supply (Has to be flat) letting the player keep large stacks in it
