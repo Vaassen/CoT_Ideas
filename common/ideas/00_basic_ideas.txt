@@ -1109,16 +1109,16 @@ humanist_ideas = { #focus outwards #done
 	}
 	indirect_rule = {
 		autonomy_change_time = -0.1
-		global_monthly_devastation = -0.1
+		global_monthly_devastation = -0.15
 	}
 	cultural_ties = {
-		core_creation = -0.075
+		core_creation = -0.1
 	}
 	benevolence = {	
 		country_admin_power = 1
 	}
 	humanist_tolerance = {
-		governing_capacity_modifier = 0.33
+		governing_capacity_modifier = 0.5
 	}
 	
 	ai_will_do = {
@@ -1366,18 +1366,17 @@ economic_ideas = { #industrial ideas
 		inflation_reduction = 0.10
 	}
 	debt_and_loans = {
-		global_monthly_devastation = -0.2
-		build_time = -0.1
+		global_monthly_devastation = -0.1
+		global_prosperity_growth = 0.34
 	}
 	centralization = {
 		interest = -0.5
 	}
 	nationalistic_enthusiasm = {
-		global_trade_goods_size_modifier = 0.1
+		build_time = -0.15
 	}
 	smithian_economics = {
-		production_efficiency = 0.15
-		global_prosperity_growth = 0.67
+		production_efficiency = 0.2
  	}
 
 	ai_will_do = {
@@ -1425,13 +1424,13 @@ logistical_ideas = { #logistical ideas
 		global_tax_modifier = 0.20 #new
 	}
 	logsi_ide5 = {
-		land_attrition = -0.20 #new
+		land_attrition = -0.15 #new
 	}
 	logsi_ide6 = {
 		land_maintenance_modifier = -0.1 #new
 	}
 	logsi_ide7 = {
-		movement_speed = 0.20
+		movement_speed = 0.15
 		leader_land_manuever = 1
 		leader_naval_manuever = 1
 		movement_speed_in_fleet_modifier = 1
@@ -1469,7 +1468,7 @@ expansion_ideas = { #frontiers #done
 		colonists = 1
 	}
 	factories = {
-		colonist_placement_chance = 0.10
+		colonist_placement_chance = 0.05
 	}
 	additional_diplomats = {
 		colonists = 1
@@ -1478,7 +1477,8 @@ expansion_ideas = { #frontiers #done
 		merchants = 1
 	}
 	competetive_merchants  = {
-		global_colonial_growth = 40
+		global_colonial_growth = 33
+		native_assimilation = 0.25
 	}
 
 	ai_will_do = {
@@ -1599,6 +1599,42 @@ expansion_ideas = { #frontiers #done
 		}
 	}
 }
+
+capital_ideas = { #capital ideas, all bonuses are lost and removed if the Idea Group is removed
+	category = ADM
+
+	bonus = {
+		development_cost = -0.05
+	}
+
+	capital_idea1 = { #Humble Beginings
+		build_cost = 0.05 #new
+	}
+	capital_idea2 = { #Home is where Home is
+		#Capital State gets +5 Local Supply (Has to be flat) letting the player keep large stacks in it
+	}
+	capital_idea3 = { #The Leap of Faith
+		#Capital State gets -33% Local Development Cost, +33% Local Goods Produced, 33% Local Manpower and 33% Local Tax + 1 Max Buildings
+		move_capital_cost_modifier = 9.99
+	}
+	capital_idea4 = { #The Landing
+		#Capital State gets -66% Local Development Cost, +66% Local Goods Produced, 66% Local Manpower and 66% Local Tax + 2 Max Buildings
+	}
+	capital_idea5 = { #Choose your Craft
+		#An Event Fires that lets the player choose goods produced in each province in the Capital State [within reason, no Damestear, no Mithril, no Cloves]
+	}
+	capital_idea6 = {
+		#Capital State gets -100% Local Development Cost, +100% Local Goods Produced, 100% Local Manpower and 100% Local Tax + 3 Max Buildings
+	}
+	capital_idea7 = {
+		#an Event Fires, letting the player choose one bonus to span the entire Capital State:
+		#
+		# Defensivness +100% + Max Attrition for Enemies +2
+		# or
+		# Local Build Cost -50% + 1 Max Building Slot + 1 Max Manu Slot
+		# or
+		# Institution Growth + 1
+	}
 
 
 
