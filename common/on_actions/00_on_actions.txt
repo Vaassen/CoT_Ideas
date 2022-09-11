@@ -8599,7 +8599,6 @@ on_leader_recruited = {
 
 # country
 on_general_recruited = {
-	add_army_tradition = 5
 }
 
 # country
