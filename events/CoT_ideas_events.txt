@@ -111,3 +111,326 @@ country_event = {
 		}
 	}
 }
+
+###---Capital Ideas---###
+
+country_event = {
+	id = CoT_i_events.4
+	title = CoT_i_events.4.t
+	desc = CoT_i_events.4.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		AND = {
+			has_idea = capital_idea2
+			NOT = {
+				has_country_flag = capital_idea_2_flag
+			}
+		}
+	}
+
+	option = {
+		name = CoT_i_events.4.a
+		every_owned_province = {
+			limit = {
+				area_for_scope_province = {
+					is_capital_of = ROOT
+				}
+			}
+			add_province_modifier = {
+				name = capital_idea_2
+				duration = -1
+			}
+		}
+		set_country_flag = capital_idea_2_flag
+	}
+}
+
+country_event = {
+	id = CoT_i_events.5
+	title = CoT_i_events.5.t
+	desc = CoT_i_events.5.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		AND = {
+			has_idea = capital_idea3
+			NOT = {
+				has_country_flag = capital_idea_3_flag
+			}
+		}
+	}
+
+	option = {
+		name = CoT_i_events.5.a
+
+		every_owned_province = {
+			limit = {
+				area_for_scope_province = {
+					is_capital_of = ROOT
+				}
+			}
+			add_province_modifier = {
+				name = capital_idea_3
+				duration = -1
+			}
+		}
+		set_country_flag = capital_idea_3_flag
+	}
+}
+
+country_event = {
+	id = CoT_i_events.6
+	title = CoT_i_events.6.t
+	desc = CoT_i_events.6.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		AND = {
+			has_idea = capital_idea4
+			NOT = {
+				has_country_flag = capital_idea_4_flag
+			}
+		}
+	}
+
+	option = {
+		name = CoT_i_events.6.a
+		every_owned_province = {
+			remove_province_modifier = capital_idea_3
+		}
+		every_owned_province = {
+			limit = {
+				area_for_scope_province = {
+					is_capital_of = ROOT
+				}
+			}
+			add_province_modifier = {
+				name = capital_idea_4
+				duration = -1
+			}
+		}
+		set_country_flag = capital_idea_4_flag
+	}
+}
+
+country_event = {
+	id = CoT_i_events.7
+	title = CoT_i_events.7.t
+	desc = CoT_i_events.7.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		AND = {
+			has_idea = capital_idea6
+			NOT = {
+				has_country_flag = capital_idea_6_flag
+			}
+		}
+	}
+
+	option = {
+		name = CoT_i_events.7.a	
+		every_owned_province = {
+			remove_province_modifier = capital_idea_4
+		}
+		every_owned_province = {
+			limit = {
+				area_for_scope_province = {
+					is_capital_of = ROOT
+				}
+			}
+			add_province_modifier = {
+				name = capital_idea_6
+				duration = -1
+			}
+		}
+		set_country_flag = capital_idea_6_flag
+	}
+}
+
+country_event = {
+	id = CoT_i_events.8
+	title = CoT_i_events.8.t
+	desc = CoT_i_events.8.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+
+
+	trigger = {
+		AND = {
+			has_idea = capital_idea5
+			any_owned_province = {
+				AND = {
+					area_for_scope_province = {
+						is_capital_of = ROOT
+					}
+					NOT = {
+						has_province_flag = goods_chosen
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = CoT_i_events.8.a
+		random_owned_province = {
+			limit = {
+				AND = {
+					area_for_scope_province = {
+						is_capital_of = ROOT
+					}
+					NOT = {
+						has_province_flag = goods_chosen
+					}
+				}
+			}
+			set_province_flag = goods_chosen
+		}
+	}
+
+	option = {
+		name = CoT_i_events.8.b
+		random_owned_province = {
+			limit = {
+				AND = {
+					area_for_scope_province = {
+						is_capital_of = ROOT
+					}
+					NOT = {
+						has_province_flag = goods_chosen
+					}
+				}
+			}
+			change_trade_goods = paper
+			set_province_flag = goods_chosen
+		}
+	}
+
+	option = {
+		name = CoT_i_events.8.c
+		random_owned_province = {
+			limit = {
+				AND = {
+					area_for_scope_province = {
+						is_capital_of = ROOT
+					}
+					NOT = {
+						has_province_flag = goods_chosen
+					}
+				}
+			}
+			change_trade_goods = iron
+			set_province_flag = goods_chosen
+		}
+	}
+
+	option = {
+		name = CoT_i_events.8.f
+		random_owned_province = {
+			limit = {
+				AND = {
+					area_for_scope_province = {
+						is_capital_of = ROOT
+					}
+					NOT = {
+						has_province_flag = goods_chosen
+					}
+				}
+			}
+			change_trade_goods = glass
+			set_province_flag = goods_chosen
+		}
+	}
+
+	option = {
+		name = CoT_i_events.8.e
+		random_owned_province = {
+			limit = {
+				AND = {
+					area_for_scope_province = {
+						is_capital_of = ROOT
+					}
+					NOT = {
+						has_province_flag = goods_chosen
+					}
+				}
+			}
+			change_trade_goods = cloth
+			set_province_flag = goods_chosen
+		}
+	}
+}
+
+country_event = {
+	id = CoT_i_events.9
+	title = CoT_i_events.9.t
+	desc = CoT_i_events.9.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+
+	trigger = {
+		AND = {
+			has_idea = capital_idea7
+			NOT = {
+				has_country_flag = capital_idea_7_flag
+			}
+		}
+	}
+
+	option = {
+		name = CoT_i_events.9.a
+		every_owned_province = {
+			limit = {
+				area_for_scope_province = {
+					is_capital_of = ROOT
+				}
+			}
+			add_province_modifier = {
+				name = capital_idea_7_a
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = CoT_i_events.9.b
+		every_owned_province = {
+			limit = {
+				area_for_scope_province = {
+					is_capital_of = ROOT
+				}
+			}
+			add_province_modifier = {
+				name = capital_idea_7_b
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = CoT_i_events.9.c
+		every_owned_province = {
+			limit = {
+				area_for_scope_province = {
+					is_capital_of = ROOT
+				}
+			}
+			add_province_modifier = {
+				name = capital_idea_7_c
+				duration = -1
+			}
+		}
+	}
+
+	after = {
+		set_country_flag = capital_idea_7_flag
+	}
+}
