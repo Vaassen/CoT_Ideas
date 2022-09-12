@@ -1,3 +1,46 @@
 focus_inwards_6 = {
 	allowed_num_of_buildings = 1
 }
+
+capital_idea_2 = {
+	supply_limit = 5
+}
+
+capital_idea_3 = {
+	local_development_cost = -0.33
+	trade_goods_size_modifier = 0.33
+	local_manpower_modifier = 0.33
+	local_tax_modifier = 0.33
+	allowed_num_of_buildings = 1
+}
+
+capital_idea_4 = {
+	local_development_cost = -0.66
+	trade_goods_size_modifier = 0.66
+	local_manpower_modifier = 0.66
+	local_tax_modifier = 0.66
+	allowed_num_of_buildings = 2
+}
+
+capital_idea_6 = {
+	local_development_cost = -1
+	trade_goods_size_modifier = 1
+	local_manpower_modifier = 1
+	local_tax_modifier = 1
+	allowed_num_of_buildings = 3
+}
+
+capital_idea_7_a = {
+	local_defensiveness = 1
+	max_attrition = 2
+}
+
+capital_idea_7_b = {
+	local_build_cost = -0.50
+	allowed_num_of_buildings = 1
+	allowed_num_of_manufactories = 1
+}
+
+capital_idea_7_c = {
+	institution_growth = 1
+}
