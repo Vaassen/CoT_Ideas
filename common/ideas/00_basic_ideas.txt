@@ -333,6 +333,43 @@ aristocracy_ideas = { # cavalry #done
 	}
 }
 
+xxx2_ideas = { #TBD
+	category = DIP
+
+	bonus = {
+        trade_efficiency = 0.1
+		imperial_authority = 0.05
+	}
+
+	xx12 = {
+		monarch_lifespan = 2.5
+	}
+	xx22 = {
+		accept_vassalization_reasons = 10
+		spy_offence = 0.15
+	}
+	xx32 = {
+		ae_impact = -0.1
+	}
+	xx42 = {
+		power_projection_from_insults = 1
+	}
+	xx52 = {
+		advisor_cost = -0.10
+	}
+	xx62 = {
+		monarch_diplomatic_power = 1
+	}
+	xx72 = {
+		max_absolutism = 15
+		yearly_absolutism = 1
+	}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
 ### DIPLOMATIC
 
 diplomatic_ideas = { #international ideas #done 
