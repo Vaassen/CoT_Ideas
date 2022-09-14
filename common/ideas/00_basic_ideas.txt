@@ -976,7 +976,7 @@ the_great_game = { #The Great Game
 	}
 }
 
-xxx = { #TBD
+xxx_ideas = { #TBD
 	category = DIP
 
 	bonus = {
@@ -984,26 +984,26 @@ xxx = { #TBD
 		imperial_authority = 0.05
 	}
 
-	xx = {
+	xx1 = {
 		monarch_lifespan = 2.5
 	}
-	xx = {
+	xx2 = {
 		accept_vassalization_reasons = 10
 		spy_offence = 0.15
 	}
-	xx = {
+	xx3 = {
 		ae_impact = -0.1
 	}
-	xx = {
+	xx4 = {
 		power_projection_from_insults = 1
 	}
-	xx = {
+	xx5 = {
 		advisor_cost = -0.10
 	}
-	xx = {
+	xx6 = {
 		monarch_diplomatic_power = 1
 	}
-	xx = {
+	xx7 = {
 		max_absolutism = 15
 		yearly_absolutism = 1
 	}
