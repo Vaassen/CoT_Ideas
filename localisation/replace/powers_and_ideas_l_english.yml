@@ -17,6 +17,7 @@
  noble_resilience:0 "Unstoppable Charge"
  noble_resilience_desc:0 "Forward to victory! Let none stand before us!"
  aristocracy_ideas_bonus:0 "Completed Elite: Cavalry §M***§!"
+
  #done
  infantry_ideas:0 "Infantry Ideas §M***§!"
  inf_ide1:0 "Local Breeders"
@@ -484,6 +485,24 @@ leadership_ideas_bonus:0 "Completed Leadership Ideas"
  general_colonization_law_desc:0 "Our traders are constantly harassed by the ungrateful locals and its about time we start fighting back. May our trade flow red with their blood if they interfere."
  competetive_merchants:0 "Proper Frontiersmen"
  competetive_merchants_desc:0 "Our frontiertowns are populated mainly by those that could not make it in the capital. We must start attracting those that are a better fit for the tough life that awaits them."
+
+ #he-he-he
+ capital_ideas:0 "Capital Ideas"
+ expansion_ideas_bonus:0 "Completed Frontier Ideas"
+ capital_idea1:0 "Adventurers Wanted!"
+ capital_idea1_desc:0 "Those who seek the thrills of adventure are legion in our lands, occasionally causing trouble and mayhem with their antics. Perhaps we should give them a job beyond the frontier?"
+ capital_idea2:0 "Striking Gold"
+ capital_idea2_desc:0 "Reportedly, our new territories are full of valuable resources. The state should ensure that we get our fair share."
+ capital_idea3:0 "Call the Adventurers"
+ capital_idea3_desc:0 "Asking the Adventurers in our country to help establish colonies should allows us to spread our influence quicker."
+ capital_idea4:0 "'Greenland'"
+ capital_idea4_desc:0 "By giving our newly formed colonies interesting names more people will want to live there."
+ capital_idea5:0 "Private Frontiers"
+ capital_idea5_desc:0 "Open up the possibilty for private investors to lift the burden of colonial management."
+ capital_idea6:0 "The Trade Must Flow"
+ capital_idea6_desc:0 "Our traders are constantly harassed by the ungrateful locals and its about time we start fighting back. May our trade flow red with their blood if they interfere."
+ capital_idea7:0 "Proper Frontiersmen"
+ capital_idea7_desc:0 "Our frontiertowns are populated mainly by those that could not make it in the capital. We must start attracting those that are a better fit for the tough life that awaits them."
  
  #done
  humanist_ideas:0 "Focus: Outwards §l***§!"
