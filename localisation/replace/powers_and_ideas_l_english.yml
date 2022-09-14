@@ -17,6 +17,23 @@
  noble_resilience:0 "Unstoppable Charge"
  noble_resilience_desc:0 "Forward to victory! Let none stand before us!"
  aristocracy_ideas_bonus:0 "Completed Elite: Cavalry §M***§!"
+ #done
+ infantry_ideas:0 "Infantry Ideas §M***§!"
+ inf_ide1:0 "Local Breeders"
+ inf_ide1_desc:0 "A long tradition of breeding mounts, even in the the furthest reaches of our empire, has made combat mounts much more accessible."
+ inf_ide2:0 "Prestigious Knights"
+ inf_ide2_desc:0 "Nothing is more prestigious than a knight in shining armor on his noble war steed."
+ inf_ide3:0 "Mounted Generals"
+ inf_ide3_desc:0 "Our generals are well versed in mounted combat and as such know how to properly utilise the destructive charge of our cavalry."
+ inf_ide4:0 "Flanking Tactics"
+ inf_ide4_desc:0 "Through the high maneuverability of our mounted troops its not hard to catch our enemy unaware!"
+ inf_ide5:0 "Cavalry-Industrial Complex"
+ inf_ide5_desc:0 "Our excessive use of cavalry has led to entire industries specializing around supporting this new army, reaping great economies of scale."
+ inf_ide6:0 "Mounted Armies"
+ inf_ide6_desc:0 "While others rely on their foot soldiers, we field entire armies of cavalry to tremple the enemy with our might!"
+ inf_ide7:0 "Unstoppable Charge"
+ inf_ide7_desc:0 "Forward to victory! Let none stand before us!"
+ infantry_ideas_bonus:0 "Completed Elite: Infantry §M***§!"
  
  #done
  quality_ideas:0 "Shock & Awe Ideas"
@@ -73,7 +90,7 @@
  quantity_ideas_bonus:0 "Completed Army Type: Levy §Y***§!"
  
  #done
- defensive_ideas:0 "Static Warfare §M***§!"
+ defensive_ideas:0 "Static Warfare"
  battlefield_commisions:0 "Siege Masters"
  battlefield_commisions_desc:0 "We know how to build and defend castles, just as well as we know how to tear them down."
  military_drill:0 "Castle Towns"
@@ -88,7 +105,7 @@
  supply_trains_desc:0 "The cadets of our engineer corps is trained with the adage; 'If one wants to know how to take a fort, one must first know how to build it'. Coincidentally, such free labour from trainees also cuts down on maintenance cost."
  improved_foraging:0 "Mobile Siege Artillery"
  improved_foraging_desc:0 "No cannon is more devastating than a siege cannon, the trick is making it mobile enough to hit more than static targets."
- defensive_ideas_bonus:0 "Completed Static Warfare §M***§!"
+ defensive_ideas_bonus:0 "Completed Static Warfare"
 
 #done 
  theocracy_gov_ideas:0 "Government: Theocracy §B***§!"

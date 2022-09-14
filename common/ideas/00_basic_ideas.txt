@@ -4,6 +4,296 @@
 
 ### MILITARY
 
+infantry_ideas = { # Elite: Infantry
+	category = MIL
+
+	trigger = {
+		NOT = { has_idea_group = aristocracy_ideas }
+	}
+
+	bonus = {
+		discipline = 0.025
+		special_unit_forcelimit= 0.025
+	}
+
+	inf_ide1 = {
+		infantry_cost = -0.05
+	}
+	inf_ide2 = {
+		reinforce_cost_modifier = -0.1
+		reinforce_speed = 0.1
+	}
+	inf_ide3 = {
+		land_attrition = -0.15
+	}
+	inf_ide4 = {
+		army_tradition_from_battle = 0.01
+		army_tradition = 0.25
+	}
+	inf_ide5 = {
+		leader_siege = 1
+	}
+	inf_ide6 = {
+		allowed_marine_fraction = 0.1
+		#Improved Marines
+	}
+	inf_ide7 = {
+		infantry_power = 0.1
+		infantry_fire = 0.1
+		infantry_shock = 0.1
+	}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+aristocracy_ideas = { # Elite: Cavalry
+	category = MIL
+
+	trigger = {
+		NOT = { has_idea_group = infantry_ideas }
+	}
+
+	bonus = {
+		discipline = 0.025
+		special_unit_forcelimit= 0.025
+	}
+	
+	noble_knights = {
+		cavalry_cost = 0.05
+	}
+	military_traditions = {
+		shock_damage = 0.05
+	}
+	local_nobility = {
+		movement_speed = 0.1
+	}
+	serfdom = {
+		army_tradition_from_battle = 0.01
+		army_tradition = 0.25
+	}
+	noble_officers = {
+		leader_land_shock = 1
+	}
+	international_nobility = {
+		cav_to_inf_ratio = 1
+	}
+	noble_resilience = {
+		cavalry_power = 0.1
+		cavalry_shock = 0.15
+		cavalry_fire = 0.15
+	}
+	
+
+	ai_will_do = {
+		factor = 0.45
+		
+		modifier = {
+			factor = 0.5
+			is_subject = yes
+		}	
+	}
+}
+
+at_standing = { # Army Type: Standing 
+	category = MIL
+
+	trigger = {
+		NOT = { has_idea_group = quantity_ideas }
+	}
+	
+	bonus = {
+		discipline = 0.025
+		special_unit_forcelimit= 0.025
+	}
+
+	at_sta1 = {
+		leader_land_manuever = 1
+	}
+	at_sta2 = {
+		war_taxes_cost_modifier = -0.5
+	}
+	at_sta3 = {
+		land_morale = 0.10
+	}
+	at_sta4 = {
+		army_tradition_decay = -0.01
+	}
+	at_sta5 = {
+		infantry_power = 0.05
+		cavalry_power = 0.05
+		artillery_power = 0.05
+	}
+	at_sta6 = {	
+		yearly_army_professionalism = 0.01
+	}
+	at_sta7 = {
+		drill_gain_modifier = 1
+		drill_decay_modifier = -0.25
+	}	
+
+	ai_will_do = {
+		factor = 2.0
+	}
+}
+
+quantity_ideas = { # Army Type: Levy
+	category = MIL
+
+	trigger = {
+		NOT = { has_idea_group = at_standing }
+	}
+	
+	bonus = {
+		discipline = 0.025
+		special_unit_forcelimit= 0.025
+	}
+	mass_army = {
+		land_forcelimit_modifier = 0.1
+	}
+	the_young_can_serve = {
+		global_garrison_growth = 0.5
+	}
+	enforced_service = {
+		land_maintenance_modifier = -0.1
+	}
+	the_old_and_infirm = {
+		reinforce_cost_modifier = -0.1
+		reinforce_speed = 0.2
+	}
+	camp_followers = {
+		global_regiment_cost = -0.1
+	}
+	garrison_conscription = {
+		land_attrition = -0.20
+	}
+	expanded_supply_trains = {
+		global_manpower_modifier = 0.33
+		global_sailors_modifier = 0.33
+	}
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+adventurer_ideas_vaass = { # Adventurer Ideas
+	category = MIL
+
+	bonus = {
+		discipline = 0.025
+		special_unit_forcelimit= 0.025
+	}
+
+	adven_ide1 = {
+		loot_amount = 0.5
+		available_province_loot = 0.5
+	}
+	adven_ide2 = {
+		power_projection_from_insults = 0.5
+	}
+	adven_ide3 = {
+		infantry_power = 0.05
+		cavalry_power = 0.05
+		artillery_power = 0.05
+	}
+	adven_ide4 = {
+		land_forcelimit_modifier = 0.2
+	}
+	adven_ide5 = {
+		recover_army_morale_speed = 0.2
+	}
+	adven_ide6 = {
+		possible_condottieri = 5
+		reinforce_speed = 0.2
+	}
+	adven_ide7 = {
+		shock_damage = 0.1
+		fire_damage = 0.1
+		adventurers_loyalty_modifier = 0.15
+	}
+
+	ai_will_do = {
+		factor = 0.4
+	}
+}
+
+leadership_ideas = { #leadership #done
+	category = MIL
+	
+	bonus = {
+		discipline = 0.025
+		special_unit_forcelimit= 0.025
+	}
+	
+	lead_ide1 = {
+		free_mil_policy = 1
+	}
+	lead_ide2 = {
+		war_taxes_cost_modifier = -0.5
+	}
+	lead_ide3 = {
+		general_cost = -0.1
+	}
+	lead_ide4 = {
+		infantry_power = 0.05
+		cavalry_power = 0.05
+		artillery_power = 0.05
+	}
+	lead_ide5 = {
+		army_tradition_decay = -0.01
+	}
+	lead_ide6 = {
+		mil_advisor_cost = -0.33
+	}
+	lead_ide7 = {
+		leader_land_fire = 1
+		leader_land_shock = 1
+		leader_land_manuever = 1
+		leader_siege = 1
+	}
+	ai_will_do = {
+		factor = 0.4
+	}
+}
+
+defensive_ideas = { # Static Warfare
+	category = MIL
+
+	bonus = {
+		discipline = 0.025
+		special_unit_forcelimit= 0.025
+	}
+
+	battlefield_commisions = {
+	    fort_maintenance_modifier = -0.1
+	}
+	military_drill = {
+		garrison_size = 0.25
+	}
+	improved_manuever = {
+		hostile_attrition = 1
+	}
+	regimental_system = {
+		land_morale = 0.1
+	}
+	defensive_mentality = {
+		defensiveness = 0.25
+	}
+	supply_trains = {
+		global_supply_limit_modifier = 0.25
+	}
+	improved_foraging = {
+		artillery_power = 0.1
+		artillery_cost = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.77
+	}
+}
+
 quality_ideas = { #Shock & Awe #done
 	category = MIL
 
@@ -23,18 +313,18 @@ quality_ideas = { #Shock & Awe #done
 		movement_speed = 0.1
 	}
 	escort_ships = {
-		shock_damage_received = -0.05
-		fire_damage_received = -0.05
+		shock_damage_received = -0.025
+		fire_damage_received = -0.025
 	}
 	naval_drill = {
 		shock_damage = 0.05
 		fire_damage = 0.05
 	}
 	copper_bottoms = {
-		artillery_cost = -0.1
+		siege_ability = 0.15
 	}
 	massed_battery = {
-		artillery_power = 0.1
+		artillery_power = 0.05
 		infantry_power = 0.1
 		cavalry_power = 0.1
 	}
@@ -78,295 +368,6 @@ offensive_ideas = { #The Grand Plan
 
 	ai_will_do = {
 		factor = 0.94
-	}
-}
-
-at_standing = { #Army Type: Standing 
-	category = MIL
-
-	trigger = {
-		NOT = { has_idea_group = quantity_ideas } #exclusive with Army Type: Levy
-	}
-	
-	bonus = {
-		discipline = 0.025
-		special_unit_forcelimit= 0.025
-	}
-
-	at_sta1 = {
-		leader_land_manuever = 1
-	}
-	at_sta2 = {
-		war_taxes_cost_modifier = -0.5
-	}
-	at_sta3 = {
-		land_morale = 0.10
-	}
-	at_sta4 = {
-		army_tradition_decay = -0.01
-	}
-	at_sta5 = {
-		infantry_power = 0.05
-		cavalry_power = 0.05
-		artillery_power = 0.05
-	}
-	at_sta6 = {	
-		yearly_army_professionalism = 0.01
-	}
-	at_sta7 = {
-		drill_gain_modifier = 1
-		drill_decay_modifier = -0.25
-	}	
-
-	ai_will_do = {
-		factor = 2.0
-	}
-}
-
-quantity_ideas = { #armyTypeLevy #done
-	category = MIL
-
-	trigger = {
-		NOT = { has_idea_group = at_standing } #exclusiv with armyTypeStanding
-	}
-	
-	bonus = {
-		discipline = 0.025
-		special_unit_forcelimit= 0.025
-	}
-	mass_army = {
-		land_forcelimit_modifier = 0.1
-	}
-	the_young_can_serve = {
-		global_garrison_growth = 0.5
-	}
-	enforced_service = {
-		land_maintenance_modifier = -0.1
-	}
-	the_old_and_infirm = {
-		reinforce_cost_modifier = -0.1
-		reinforce_speed = 0.2
-	}
-	camp_followers = {
-		global_regiment_cost = -0.1
-	}
-	garrison_conscription = {
-		land_attrition = -0.20
-	}
-	expanded_supply_trains = {
-		global_manpower_modifier = 0.33
-		global_sailors_modifier = 0.33
-	}
-
-	ai_will_do = {
-		factor = 1.0
-	}
-}
-
-adventurer_ideas_vaass = { #adventurer #done
-	category = MIL
-
-	bonus = {
-		discipline = 0.025
-		special_unit_forcelimit= 0.025
-	}
-
-	adven_ide1 = {
-		loot_amount = 0.5
-		available_province_loot = 0.5
-	}
-	adven_ide2 = {
-		power_projection_from_insults = 1
-	}
-	adven_ide3 = {
-		infantry_power = 0.05
-		cavalry_power = 0.05
-		artillery_power = 0.05
-	}
-	adven_ide4 = {
-		land_forcelimit_modifier = 0.2
-	}
-	adven_ide5 = {
-		recover_army_morale_speed = 0.33
-	}
-	adven_ide6 = {
-		possible_condottieri = 5
-		reinforce_speed = 0.33
-	}
-	adven_ide7 = {
-		shock_damage = 0.1
-		fire_damage = 0.1
-		adventurers_loyalty_modifier = 0.15
-	}
-
-	ai_will_do = {
-		factor = 0.4
-	}
-}
-
-leadership_ideas = { #leadership #done
-	category = MIL
-	
-	bonus = {
-		discipline = 0.025
-		special_unit_forcelimit= 0.025
-	}
-	
-	lead_ide1 = {
-		leader_siege = 1
-	}
-	lead_ide2 = {
-		leader_land_manuever = 1
-	}
-	lead_ide3 = {
-		monarch_military_power = 1
-	}
-	lead_ide4 = {
-		infantry_power = 0.05
-		cavalry_power = 0.05
-		artillery_power = 0.05
-	}
-	lead_ide5 = {
-		army_tradition_decay = -0.01
-	}
-	lead_ide6 = {
-		mil_advisor_cost = -0.33
-	}
-	lead_ide7 = {
-		leader_land_fire = 1
-		leader_land_shock = 1
-		free_mil_policy = 1
-		may_recruit_female_generals = yes
-	}
-	ai_will_do = {
-		factor = 0.4
-	}
-}
-
-defensive_ideas = { #staticWarfare #done
-	category = MIL
-
-	trigger = {
-		NOT = {
-			has_idea_group = aristocracy_ideas
-		}
-	}
-	bonus = {
-		discipline = 0.025
-		special_unit_forcelimit= 0.025
-	}
-
-	battlefield_commisions = {
-		siege_ability = 0.1
-	}
-	military_drill = {
-		garrison_size = 0.25
-	}
-	improved_manuever = {
-		hostile_attrition = 1
-	}
-	regimental_system = {
-		land_morale = 0.1
-	}
-	defensive_mentality = {
-		defensiveness = 0.33
-	}
-	supply_trains = {
-		fort_maintenance_modifier = -0.33
-	}
-	improved_foraging = {
-		backrow_artillery_damage = 0.1
-		artillery_bonus_vs_fort = 1
-	}
-
-	ai_will_do = {
-		factor = 0.77
-	}
-}
-
-aristocracy_ideas = { # cavalry #done
-	category = MIL
-
-	trigger = {
-		NOT = {
-			has_idea_group = defensive_ideas
-		}
-	}
-
-	bonus = {
-		discipline = 0.025
-		special_unit_forcelimit= 0.025
-	}
-	
-	noble_knights = {
-		cavalry_power = 0.05
-	}
-	military_traditions = {
-		shock_damage = 0.05
-	}
-	local_nobility = {
-		leader_land_shock = 1
-	}
-	serfdom = {
-		cavalry_flanking = 0.25
-		cavalry_cost = -0.1
-	}
-	noble_officers = {
-		cavalry_power = 0.1
-	}
-	international_nobility = {
-		cavalry_cost = -0.1
-	}
-	noble_resilience = {
-		movement_speed = 0.2
-		cav_to_inf_ratio = 1 #done so because of how paradox's battle mechanics are lmao
-	}
-	
-
-	ai_will_do = {
-		factor = 0.45
-		
-		modifier = {
-			factor = 0.5
-			is_subject = yes
-		}	
-	}
-}
-
-xxx2_ideas = { #TBD
-	category = DIP
-
-	bonus = {
-        trade_efficiency = 0.1
-		imperial_authority = 0.05
-	}
-
-	xx12 = {
-		monarch_lifespan = 2.5
-	}
-	xx22 = {
-		accept_vassalization_reasons = 10
-		spy_offence = 0.15
-	}
-	xx32 = {
-		ae_impact = -0.1
-	}
-	xx42 = {
-		power_projection_from_insults = 1
-	}
-	xx52 = {
-		advisor_cost = -0.10
-	}
-	xx62 = {
-		monarch_diplomatic_power = 1
-	}
-	xx72 = {
-		max_absolutism = 15
-		yearly_absolutism = 1
-	}
-	
-	ai_will_do = {
-		factor = 1.0
 	}
 }
 
