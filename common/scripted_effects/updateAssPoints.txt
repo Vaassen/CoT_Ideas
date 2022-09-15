@@ -2,10 +2,14 @@ update_ass_points = {
 	hidden_effect = {
 		set_variable = {
 			which = MaxAssPoints
-			value = 5
+			value = 10
 		}
 		set_variable = {
 			which = UsedAssPointsMinor
+			value = 0
+		}
+		set_variable = {
+			which = UsedAssPointsMiddle
 			value = 0
 		}
 		set_variable = {
@@ -80,13 +84,6 @@ update_ass_points = {
 			}
 		}
 		if = {
-			limit = { is_great_power = yes }
-			change_variable = {
-				which = MaxAssPoints
-				value = -1
-			}
-		}
-		if = {
 			limit = {
 				has_country_modifier = monstrous_nation
 				NOT = {
@@ -95,14 +92,14 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = MaxAssPoints
-				value = -2
+				value = -4
 			}
 		}
 		if = {
 			limit = { has_country_flag = semi_monstrous }
 			change_variable = {
 				which = MaxAssPoints
-				value = -1
+				value = -2
 			}
 		}
 		if = {
@@ -114,7 +111,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = MaxAssPoints
-				value = -2
+				value = -4
 			}
 		}
 		if = {
@@ -126,23 +123,14 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = MaxAssPoints
-				value = -3
+				value = -6
 			}
 		}
 		if = {
 			limit = { full_idea_group = spy_ideas }
 			change_variable = {
 				which = MaxAssPoints
-				value = -3
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = has_vampires_estate
-			}
-			change_variable = {
-				which = MaxAssPoints
-				value = -1
+				value = -9
 			}
 		}
 		if = {
@@ -151,7 +139,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = MaxAssPoints
-				value = -1
+				value = -2
 			}
 		}
 		if = {
@@ -174,7 +162,7 @@ update_ass_points = {
 		}
 
 		# Calc used points
-		# non-gps
+		# Minor Powers
 		if = {
 			limit = {
 				calc_true_if = {
@@ -192,7 +180,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsMinor
-				value = 2
+				value = 3
 			}
 		}
 		if = {
@@ -212,7 +200,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsMinor
-				value = 2
+				value = 3
 			}
 		}
 		if = {
@@ -232,7 +220,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsMinor
-				value = 2
+				value = 3
 			}
 		}
 		if = {
@@ -252,7 +240,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsMinor
-				value = 2
+				value = 3
 			}
 		}
 		if = {
@@ -272,11 +260,11 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsMinor
-				value = 2
+				value = 3
 			}
 		}
 		
-		#gps
+		#Middle Powers
 		
 		if = {
 			limit = {
@@ -288,14 +276,15 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
+							great_power_rank = 6
 						}
 					}
 					amount = 1
 				}
 			}
 			change_variable = {
-				which = UsedAssPointsMajor
-				value = 3
+				which = UsedAssPointsMiddle
+				value = 4
 			}
 		}
 		if = {
@@ -308,14 +297,15 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
+							great_power_rank = 6
 						}
 					}
 					amount = 2
 				}
 			}
 			change_variable = {
-				which = UsedAssPointsMajor
-				value = 3
+				which = UsedAssPointsMiddle
+				value = 4
 			}
 		}
 		if = {
@@ -328,14 +318,15 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
+							great_power_rank = 6
 						}
 					}
 					amount = 3
 				}
 			}
 			change_variable = {
-				which = UsedAssPointsMajor
-				value = 3
+				which = UsedAssPointsMiddle
+				value = 4
 			}
 		}
 		if = {
@@ -348,14 +339,15 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
+							great_power_rank = 6
 						}
 					}
 					amount = 4
 				}
 			}
 			change_variable = {
-				which = UsedAssPointsMajor
-				value = 3
+				which = UsedAssPointsMiddle
+				value = 4
 			}
 		}
 		if = {
@@ -368,17 +360,128 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
+							great_power_rank = 6
 						}
 					}
 					amount = 5
 				}
 			}
 			change_variable = {
-				which = UsedAssPointsMajor
-				value = 3
+				which = UsedAssPointsMiddle
+				value = 4
 			}
 		}
 
+		#Great Powers
+
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = yes
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							great_power_rank = 1
+							NOT = {
+								great_power_rank = 6
+							}
+						}
+					}
+					amount = 1
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMajor
+				value = 8
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = yes
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							great_power_rank = 6
+						}
+					}
+					amount = 2
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMajor
+				value = 8
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = yes
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							great_power_rank = 6
+						}
+					}
+					amount = 3
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMajor
+				value = 8
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = yes
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							great_power_rank = 6
+						}
+					}
+					amount = 4
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMajor
+				value = 8
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_known_country = {
+						AND = {
+							is_great_power = yes
+							is_ass_ally = {
+								me = PREV
+								target = THIS
+							}
+							great_power_rank = 6
+						}
+					}
+					amount = 5
+				}
+			}
+			change_variable = {
+				which = UsedAssPointsMajor
+				value = 8
+			}
+		}
 		
 		#Vassals
 		
@@ -562,6 +665,10 @@ update_ass_points = {
 		change_variable = {
 			which = UsedAssPointsTotal
 			which = UsedAssPointsMajor
+		}
+		change_variable = {
+			which = UsedAssPointsTotal
+			which = UsedAssPointsMiddle
 		}
 		change_variable = {
 			which = UsedAssPointsTotal
