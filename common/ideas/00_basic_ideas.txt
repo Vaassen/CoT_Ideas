@@ -27,7 +27,7 @@ infantry_ideas = { # Elite: Infantry
 		land_attrition = -0.15
 	}
 	inf_ide4 = {
-		army_tradition_from_battle = 0.01
+		army_tradition_from_battle = 1
 		army_tradition = 0.25
 	}
 	inf_ide5 = {
@@ -61,7 +61,7 @@ aristocracy_ideas = { # Elite: Cavalry
 	}
 	
 	noble_knights = {
-		cavalry_cost = 0.05
+		cavalry_cost = -0.05
 	}
 	military_traditions = {
 		shock_damage = 0.05
@@ -70,7 +70,7 @@ aristocracy_ideas = { # Elite: Cavalry
 		movement_speed = 0.1
 	}
 	serfdom = {
-		army_tradition_from_battle = 0.01
+		army_tradition_from_battle = 1
 		army_tradition = 0.25
 	}
 	noble_officers = {
