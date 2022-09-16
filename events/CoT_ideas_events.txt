@@ -434,3 +434,35 @@ country_event = {
 		set_country_flag = capital_idea_7_flag
 	}
 }
+
+#Infantry Ideas
+
+country_event = {
+	id = CoT_i_events.10
+	title = CoT_i_events.10.t
+	desc = CoT_i_events.10.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+
+	hidden =yes
+
+	trigger = {
+		AND = {
+			has_idea = inf_ide6
+			NOT = {
+				has_country_flag = inf_ide6_flag
+			}
+		}
+	}
+
+	option = {
+		name = CoT_i_events.10.a
+		add_country_modifier = {
+			name = improved_marines
+			duration = -1
+		}
+	}
+
+	after = {
+		set_country_flag = inf_ide6_flag
+	}
+}
