@@ -70,7 +70,7 @@ aristocracy_ideas = { # Elite: Cavalry
 		movement_speed = 0.1
 	}
 	serfdom = {
-		army_tradition_from_battle = 0.01
+		army_tradition_from_battle = 1
 		army_tradition = 0.25
 	}
 	noble_officers = {
