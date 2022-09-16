@@ -61,7 +61,7 @@ aristocracy_ideas = { # Elite: Cavalry
 	}
 	
 	noble_knights = {
-		cavalry_cost = 0.05
+		cavalry_cost = -0.05
 	}
 	military_traditions = {
 		shock_damage = 0.05
