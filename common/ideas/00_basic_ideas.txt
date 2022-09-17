@@ -1033,20 +1033,18 @@ shadows_and_daggers = { #TBD
 		dip_tech_cost_modifier = -0.05
 	}
 	s_d4 = {
-		#custom mechanic 1, tba, tbd
-		global_spy_defence = 0.1
+		# Let's the Player switch mana focus at will
+		global_spy_defence = 0.15
 	}
 	s_d5 = {
 		siege_ability = 0.15
 	}
 	s_d6 = {
-		#custom mechanic 2, tba, tbd
-		global_spy_defence = 0.1
+		global_spy_defence = 0.15
 	}
 	s_d7 = {
 		spy_offence = 0.66
 		diplomats = 1
-		global_spy_defence = 0.1
 	}
 	
 	ai_will_do = {
