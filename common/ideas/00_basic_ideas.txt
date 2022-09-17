@@ -270,7 +270,7 @@ defensive_ideas = { # Static Warfare
 	    fort_maintenance_modifier = -0.1
 	}
 	military_drill = {
-		garrison_size = 0.25
+		global_supply_limit_modifier = 0.25
 	}
 	improved_manuever = {
 		hostile_attrition = 1
@@ -282,7 +282,7 @@ defensive_ideas = { # Static Warfare
 		defensiveness = 0.25
 	}
 	supply_trains = {
-		global_supply_limit_modifier = 0.25
+		garrison_size = 0.5
 	}
 	improved_foraging = {
 		artillery_power = 0.1
