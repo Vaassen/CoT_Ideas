@@ -18,6 +18,7 @@ vass_an_underdog_1 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 1
 		}
 		NOT = {
@@ -53,6 +54,7 @@ vass_glorious_armada_1 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 1
 		}
 		NOT = {
@@ -87,6 +89,7 @@ vass_gold_and_lies_1 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 1
 		}
 		NOT = {
@@ -122,6 +125,7 @@ vass_a_grand_court_1 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 1
 		}
 		NOT = {
@@ -157,6 +161,7 @@ vass_a_melting_pot_1 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 1
 		}
 		NOT = {
@@ -196,6 +201,7 @@ vass_unity_strength_1 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 1
 		}
 		NOT = {
@@ -241,6 +247,7 @@ vass_an_underdog_2 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 2
 		}
 		NOT = {
@@ -277,6 +284,7 @@ vass_glorious_armada_2 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 2
 		}
 		NOT = {
@@ -311,6 +319,7 @@ vass_gold_and_lies_2 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 2
 		}
 		NOT = {
@@ -346,6 +355,7 @@ vass_a_grand_court_2 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 2
 		}
 		NOT = {
@@ -381,6 +391,7 @@ vass_a_melting_pot_2 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 2
 		}
 		NOT = {
@@ -420,6 +431,7 @@ vass_unity_strength_2 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 2
 		}
 		NOT = {
@@ -465,6 +477,7 @@ vass_an_underdog_3 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 3
 		}
 		NOT = {
@@ -500,6 +513,7 @@ vass_glorious_armada_3 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 3
 		}
 		NOT = {
@@ -534,6 +548,7 @@ vass_gold_and_lies_3 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 3
 		}
 		NOT = {
@@ -569,6 +584,7 @@ vass_a_grand_court_3 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 3
 		}
 		NOT = {
@@ -603,6 +619,7 @@ vass_a_melting_pot_3 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 3
 		}
 		NOT = {
@@ -642,6 +659,7 @@ vass_unity_strength_3 = {
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
 		amount = 3
 		}
 		NOT = {
