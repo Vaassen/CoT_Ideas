@@ -7,6 +7,7 @@ country_decisions = {
 
 		allow = {
 			is_at_war = no
+			ai = no 
 		}
 
 		effect = {
