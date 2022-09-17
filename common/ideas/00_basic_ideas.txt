@@ -1684,23 +1684,27 @@ capital_ideas = { #capital ideas, all bonuses are lost and removed if the Idea G
 	}
 
 	capital_idea1 = { #Humble Beginings
-		build_cost = 0.05 #new
+	    move_capital_cost_modifier = 1
 	}
 	capital_idea2 = { #Home is where Home is
 		#Capital State gets +5 Local Supply (Has to be flat) letting the player keep large stacks in it
+		move_capital_cost_modifier = 1
 	}
 	capital_idea3 = { #The Leap of Faith
 		#Capital State gets -33% Local Development Cost, +33% Local Goods Produced, 33% Local Manpower and 33% Local Tax + 1 Max Buildings
-		move_capital_cost_modifier = 9.99
+		move_capital_cost_modifier = 1
 	}
 	capital_idea4 = { #The Landing
 		#Capital State gets -66% Local Development Cost, +66% Local Goods Produced, 66% Local Manpower and 66% Local Tax + 2 Max Buildings
+		move_capital_cost_modifier = 1
 	}
 	capital_idea5 = { #Choose your Craft
 		#An Event Fires that lets the player choose goods produced in each province in the Capital State [within reason, no Damestear, no Mithril, no Cloves]
+		move_capital_cost_modifier = 1
 	}
 	capital_idea6 = {
 		#Capital State gets -100% Local Development Cost, +100% Local Goods Produced, 100% Local Manpower and 100% Local Tax + 3 Max Buildings
+		move_capital_cost_modifier = 1
 	}
 	capital_idea7 = {
 		#an Event Fires, letting the player choose one bonus to span the entire Capital State:
@@ -1710,6 +1714,7 @@ capital_ideas = { #capital ideas, all bonuses are lost and removed if the Idea G
 		# Local Build Cost -50% + 1 Max Building Slot + 1 Max Manu Slot
 		# or
 		# Institution Growth + 1
+		move_capital_cost_modifier = 1
 	}
 
 
