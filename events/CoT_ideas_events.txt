@@ -466,3 +466,28 @@ country_event = {
 		set_country_flag = inf_ide6_flag
 	}
 }
+
+#Change National Focus
+country_event = {
+	id = CoT_i_events.11
+	title = CoT_i_events.11.t
+	desc = CoT_i_events.11.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = CoT_i_events.11.a
+		change_national_focus = ADM
+	}
+
+	option = {
+		name = CoT_i_events.11.b
+		change_national_focus = DIP
+	}
+
+	option = {
+		name = CoT_i_events.11.c
+		change_national_focus = MIL
+	}
+}

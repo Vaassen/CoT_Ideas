@@ -34,3 +34,10 @@
  CoT_i_events.9.a:0 "Build Fortifications"
  CoT_i_events.9.b:0 "Invest into Infrastructure"
  CoT_i_events.9.c:0 "Technology Investments"
+
+ swap_national_focus_title:0 "Change National Focus"
+ CoT_i_events.11.t:0 "Change National Focus"
+ CoT_i_events.11.d:0 "Change your National Focus"
+ CoT_i_events.11.a:0 "Administrative"
+ CoT_i_events.11.b:0 "Diplomatic"
+ CoT_i_events.11.c:0 "Military"

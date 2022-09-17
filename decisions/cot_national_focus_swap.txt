@@ -1,0 +1,18 @@
+country_decisions = {
+	swap_national_focus = {
+		major = yes
+		potential = {
+			has_idea = s_d4
+		}
+
+		allow = {
+			is_at_war = no
+		}
+
+		effect = {
+			country_event = {
+				id = CoT_i_events.11
+			}
+		}
+	}
+}
