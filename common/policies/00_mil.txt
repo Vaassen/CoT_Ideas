@@ -18,6 +18,7 @@ vass_cutting_edge_1 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 1
 		}
 		NOT = {
@@ -53,6 +54,7 @@ vass_affordable_munitions_1 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 1
 		}
 		NOT = {
@@ -87,6 +89,7 @@ vass_engineer_corps_1 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 1
 		}
 		NOT = {
@@ -122,6 +125,7 @@ vass_professional_corps_1 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 1
 		}
 		NOT = {
@@ -159,6 +163,7 @@ vass_deep_reserve_1 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 1
 		}
 		NOT = {
@@ -197,6 +202,7 @@ vass_hunters_and_baggage_1 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 1
 		}
 		NOT = {
@@ -234,6 +240,7 @@ vass_cutting_edge_2 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 2
 		}
 		NOT = {
@@ -269,6 +276,7 @@ vass_affordable_munitions_2 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 2
 		}
 		NOT = {
@@ -303,6 +311,7 @@ vass_engineer_corps_2 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 2
 		}
 		NOT = {
@@ -338,6 +347,7 @@ vass_professional_corps_2 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 2
 		}
 		NOT = {
@@ -375,6 +385,7 @@ vass_deep_reserve_2 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 2
 		}
 		NOT = {
@@ -413,6 +424,7 @@ vass_hunters_and_baggage_2 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 2
 		}
 		NOT = {
@@ -450,6 +462,7 @@ vass_cutting_edge_3 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 3
 		}
 		NOT = {
@@ -485,6 +498,7 @@ vass_affordable_munitions_3 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 3
 		}
 		NOT = {
@@ -519,6 +533,7 @@ vass_engineer_corps_3 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 3
 		}
 		NOT = {
@@ -554,6 +569,7 @@ vass_professional_corps_3 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 3
 		}
 		NOT = {
@@ -591,6 +607,7 @@ vass_deep_reserve_3 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 3
 		}
 		NOT = {
@@ -629,6 +646,7 @@ vass_hunters_and_baggage_3 = {
 		full_idea_group = leadership_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = infantry_ideas
 		amount = 3
 		}
 		NOT = {
