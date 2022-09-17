@@ -187,11 +187,11 @@ adventurer_ideas_vaass = { # Adventurer Ideas
 	}
 
 	adven_ide1 = {
-		loot_amount = 0.5
-		available_province_loot = 0.5
+		loot_amount = 2
+		available_province_loot = 2
 	}
 	adven_ide2 = {
-		power_projection_from_insults = 0.5
+		power_projection_from_insults = 1
 	}
 	adven_ide3 = {
 		infantry_power = 0.05
@@ -245,7 +245,7 @@ leadership_ideas = { #leadership #done
 		army_tradition_decay = -0.01
 	}
 	lead_ide6 = {
-		mil_advisor_cost = -0.33
+		mil_advisor_cost = -0.25
 	}
 	lead_ide7 = {
 		leader_land_fire = 1
@@ -381,7 +381,7 @@ diplomatic_ideas = { #international ideas #done
 	}
 	
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -402,11 +402,11 @@ diplomatic_ideas = { #international ideas #done
 		diplomats = 1
 	}
 	flexible_negotiation = {
-		diplomatic_reputation = 1
+		monarch_diplomatic_power = 1
 	}
 	diplomatic_corps = {
-		country_diplomatic_power = 1
-		dip_tech_cost_modifier = -0.05
+		dip_tech_cost_modifier = -0.1
+		diplomatic_reputation = 2
 	}
 
 	ai_will_do = {
@@ -431,12 +431,12 @@ spy_ideas = { #isolation ideas
 	}
 	
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
 	efficient_spies = {
-		prestige_decay = -0.01
+		prestige_decay = -0.02
 	}	
 	
 	agent_training = {
@@ -445,7 +445,7 @@ spy_ideas = { #isolation ideas
 	}
 
 	vetting = {
-		ae_impact = -0.15
+		ae_impact = -0.20
 	}
 
 	state_propaganda = {
@@ -454,7 +454,7 @@ spy_ideas = { #isolation ideas
 	}
 	
 	claim_fabrication = {
-		same_culture_advisor_cost = -0.2
+		same_culture_advisor_cost = -0.25
 	}
 	
 	privateers = {
@@ -462,8 +462,8 @@ spy_ideas = { #isolation ideas
 	}
 
 	audit_checks = {
-		all_power_cost = -0.075
-		diplomatic_upkeep = -2
+		all_power_cost = -0.1
+		diplomatic_upkeep = -3
 	}
 
 	ai_will_do = {
@@ -479,7 +479,7 @@ maritime_ideas = { #trade fleet #done
 	}
 
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -550,7 +550,7 @@ naval_ideas = { #war fleet #done
 	}
 
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -618,7 +618,7 @@ trade_ideas = { #mercantile #done
 	category = DIP
 
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -669,7 +669,7 @@ exploration_ideas = { #reclamation #done
 	}
 	
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -929,7 +929,7 @@ influence_ideas = { #benevolence #done
 	category = DIP
 
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -942,7 +942,7 @@ influence_ideas = { #benevolence #done
 	}
 	
 	integrated_elites = {
-		dip_advisor_cost = -0.33
+		dip_advisor_cost = -0.25
 	}
 	buffer_states = {
 		diplomatic_upkeep = 1
@@ -950,14 +950,14 @@ influence_ideas = { #benevolence #done
 	}
 	diplomatic_influence = {
 		diplomats = 1
-		envoy_travel_time = -0.33
 	}
 	postal_service = {
-		all_estate_loyalty_equilibrium = 0.05
+		#Gives Buffs to AI Subjects
+		envoy_travel_time = -0.5
 	}
 	marcher_lords = {
-		liberty_desire_from_subject_development = -0.5
-		diplomatic_annexation_cost = -0.15
+		liberty_desire_from_subject_development = -0.66
+		diplomatic_annexation_cost = -0.1
 	}
 
 	ai_will_do = {
@@ -981,7 +981,7 @@ the_great_game = { #The Great Game
 	category = DIP
 
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -1014,36 +1014,37 @@ the_great_game = { #The Great Game
 	}
 }
 
-xxx_ideas = { #TBD
+shadows_and_daggers = { #TBD
 	category = DIP
 
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
-	xx1 = {
-		monarch_lifespan = 2.5
+	s_d1 = {
+		diplomats = 1
 	}
-	xx2 = {
-		accept_vassalization_reasons = 10
-		spy_offence = 0.15
+	s_d2 = {
+		envoy_travel_time = -0.33
 	}
-	xx3 = {
-		ae_impact = -0.1
+	s_d3 = {
+		ae_impact = -0.05
+		dip_tech_cost_modifier = -0.05
 	}
-	xx4 = {
-		power_projection_from_insults = 1
+	s_d4 = {
+		# Let's the Player switch mana focus at will
+		global_spy_defence = 0.15
 	}
-	xx5 = {
-		advisor_cost = -0.10
+	s_d5 = {
+		siege_ability = 0.15
 	}
-	xx6 = {
-		monarch_diplomatic_power = 1
+	s_d6 = {
+		global_spy_defence = 0.15
 	}
-	xx7 = {
-		max_absolutism = 15
-		yearly_absolutism = 1
+	s_d7 = {
+		spy_offence = 0.66
+		diplomats = 1
 	}
 	
 	ai_will_do = {
@@ -1128,7 +1129,7 @@ religious_ideas = { #zealotry ideas #done
 		missionary_maintenance_cost = -0.15
 	}
 	devoutness = {
-		same_culture_advisor_cost = -0.125
+		same_culture_advisor_cost = -0.1
 	}
 	religious_tradition = {
 		monarch_admin_power = 1
@@ -1684,23 +1685,27 @@ capital_ideas = { #capital ideas, all bonuses are lost and removed if the Idea G
 	}
 
 	capital_idea1 = { #Humble Beginings
-		build_cost = 0.05 #new
+	    move_capital_cost_modifier = 1
 	}
 	capital_idea2 = { #Home is where Home is
 		#Capital State gets +5 Local Supply (Has to be flat) letting the player keep large stacks in it
+		move_capital_cost_modifier = 1
 	}
 	capital_idea3 = { #The Leap of Faith
 		#Capital State gets -33% Local Development Cost, +33% Local Goods Produced, 33% Local Manpower and 33% Local Tax + 1 Max Buildings
-		move_capital_cost_modifier = 9.99
+		move_capital_cost_modifier = 1
 	}
 	capital_idea4 = { #The Landing
 		#Capital State gets -66% Local Development Cost, +66% Local Goods Produced, 66% Local Manpower and 66% Local Tax + 2 Max Buildings
+		move_capital_cost_modifier = 1
 	}
 	capital_idea5 = { #Choose your Craft
 		#An Event Fires that lets the player choose goods produced in each province in the Capital State [within reason, no Damestear, no Mithril, no Cloves]
+		move_capital_cost_modifier = 1
 	}
 	capital_idea6 = {
 		#Capital State gets -100% Local Development Cost, +100% Local Goods Produced, 100% Local Manpower and 100% Local Tax + 3 Max Buildings
+		move_capital_cost_modifier = 1
 	}
 	capital_idea7 = {
 		#an Event Fires, letting the player choose one bonus to span the entire Capital State:
@@ -1710,6 +1715,7 @@ capital_ideas = { #capital ideas, all bonuses are lost and removed if the Idea G
 		# Local Build Cost -50% + 1 Max Building Slot + 1 Max Manu Slot
 		# or
 		# Institution Growth + 1
+		move_capital_cost_modifier = 1
 	}
 
 
