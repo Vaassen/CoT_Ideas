@@ -950,10 +950,10 @@ influence_ideas = { #benevolence #done
 	}
 	diplomatic_influence = {
 		diplomats = 1
-		envoy_travel_time = -0.33
 	}
 	postal_service = {
 		#Gives Buffs to AI Subjects
+		envoy_travel_time = -0.5
 	}
 	marcher_lords = {
 		liberty_desire_from_subject_development = -0.66
@@ -1023,25 +1023,28 @@ shadows_and_daggers = { #TBD
 	}
 
 	s_d1 = {
-		spy_offence = 0.15
+		diplomats = 1
 	}
-	s_d12 = {
-		spy_offence = 0.15
+	s_d2 = {
+		envoy_travel_time = -0.33
 	}
-	s_d13 = {
-		spy_offence = 0.15
+	s_d3 = {
+		ae_impact = -0.05
+		dip_tech_cost_modifier = -0.05
 	}
-	s_d14 = {
-		spy_offence = 0.15
+	s_d4 = {
+		#custom mechanic 1, tba, tbd
 	}
-	s_d15 = {
-		spy_offence = 0.15
+	s_d5 = {
+		siege_ability = 0.15
 	}
-	s_d16 = {
-		spy_offence = 0.15
+	s_d6 = {
+		#custom mechanic 2, tba, tbd
 	}
-	s_d17 = {
-		spy_offence = 0.15
+	s_d7 = {
+		spy_offence = 0.5
+		global_spy_defence = 0.5
+		diplomats = 1
 	}
 	
 	ai_will_do = {
