@@ -1034,18 +1034,19 @@ shadows_and_daggers = { #TBD
 	}
 	s_d4 = {
 		#custom mechanic 1, tba, tbd
-		global_spy_defence = 0.15
+		global_spy_defence = 0.1
 	}
 	s_d5 = {
 		siege_ability = 0.15
 	}
 	s_d6 = {
 		#custom mechanic 2, tba, tbd
-		global_spy_defence = 0.15
+		global_spy_defence = 0.1
 	}
 	s_d7 = {
 		spy_offence = 0.66
 		diplomats = 1
+		global_spy_defence = 0.1
 	}
 	
 	ai_will_do = {
