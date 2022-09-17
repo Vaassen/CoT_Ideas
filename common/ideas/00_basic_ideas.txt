@@ -1029,18 +1029,18 @@ shadows_and_daggers = { #TBD
 		envoy_travel_time = -0.33
 	}
 	s_d3 = {
-		ae_impact = -0.05
-		dip_tech_cost_modifier = -0.05
+		embargo_efficiency = 0.25
+		dip_tech_cost_modifier = -0.075
 	}
 	s_d4 = {
 		# Let's the Player switch mana focus at will
-		global_spy_defence = 0.15
+		global_spy_defence = 0.2
 	}
 	s_d5 = {
 		siege_ability = 0.15
 	}
 	s_d6 = {
-		global_spy_defence = 0.15
+		rebel_support_efficiency = 1
 	}
 	s_d7 = {
 		spy_offence = 0.66
