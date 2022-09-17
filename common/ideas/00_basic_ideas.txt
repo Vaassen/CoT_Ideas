@@ -381,7 +381,7 @@ diplomatic_ideas = { #international ideas #done
 	}
 	
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -431,12 +431,12 @@ spy_ideas = { #isolation ideas
 	}
 	
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
 	efficient_spies = {
-		prestige_decay = -0.01
+		prestige_decay = -0.02
 	}	
 	
 	agent_training = {
@@ -445,7 +445,7 @@ spy_ideas = { #isolation ideas
 	}
 
 	vetting = {
-		ae_impact = -0.15
+		ae_impact = -0.20
 	}
 
 	state_propaganda = {
@@ -454,7 +454,7 @@ spy_ideas = { #isolation ideas
 	}
 	
 	claim_fabrication = {
-		same_culture_advisor_cost = -0.2
+		same_culture_advisor_cost = -0.25
 	}
 	
 	privateers = {
@@ -462,8 +462,8 @@ spy_ideas = { #isolation ideas
 	}
 
 	audit_checks = {
-		all_power_cost = -0.075
-		diplomatic_upkeep = -2
+		all_power_cost = -0.1
+		diplomatic_upkeep = -3
 	}
 
 	ai_will_do = {
@@ -479,7 +479,7 @@ maritime_ideas = { #trade fleet #done
 	}
 
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -550,7 +550,7 @@ naval_ideas = { #war fleet #done
 	}
 
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -618,7 +618,7 @@ trade_ideas = { #mercantile #done
 	category = DIP
 
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -669,7 +669,7 @@ exploration_ideas = { #reclamation #done
 	}
 	
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -929,7 +929,7 @@ influence_ideas = { #benevolence #done
 	category = DIP
 
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -953,11 +953,11 @@ influence_ideas = { #benevolence #done
 		envoy_travel_time = -0.33
 	}
 	postal_service = {
-		all_estate_loyalty_equilibrium = 0.05
+		#Gives Buffs to AI Subjects
 	}
 	marcher_lords = {
-		liberty_desire_from_subject_development = -0.5
-		diplomatic_annexation_cost = -0.15
+		liberty_desire_from_subject_development = -0.66
+		diplomatic_annexation_cost = -0.1
 	}
 
 	ai_will_do = {
@@ -981,7 +981,7 @@ the_great_game = { #The Great Game
 	category = DIP
 
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
@@ -1014,36 +1014,34 @@ the_great_game = { #The Great Game
 	}
 }
 
-xxx_ideas = { #TBD
+shadows_and_daggers = { #TBD
 	category = DIP
 
 	bonus = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.05
 		imperial_authority = 0.05
 	}
 
-	xx1 = {
-		monarch_lifespan = 2.5
-	}
-	xx2 = {
-		accept_vassalization_reasons = 10
+	s_d1 = {
 		spy_offence = 0.15
 	}
-	xx3 = {
-		ae_impact = -0.1
+	s_d12 = {
+		spy_offence = 0.15
 	}
-	xx4 = {
-		power_projection_from_insults = 1
+	s_d13 = {
+		spy_offence = 0.15
 	}
-	xx5 = {
-		advisor_cost = -0.10
+	s_d14 = {
+		spy_offence = 0.15
 	}
-	xx6 = {
-		monarch_diplomatic_power = 1
+	s_d15 = {
+		spy_offence = 0.15
 	}
-	xx7 = {
-		max_absolutism = 15
-		yearly_absolutism = 1
+	s_d16 = {
+		spy_offence = 0.15
+	}
+	s_d17 = {
+		spy_offence = 0.15
 	}
 	
 	ai_will_do = {
