@@ -245,7 +245,7 @@ leadership_ideas = { #leadership #done
 		army_tradition_decay = -0.01
 	}
 	lead_ide6 = {
-		mil_advisor_cost = -0.33
+		mil_advisor_cost = -0.25
 	}
 	lead_ide7 = {
 		leader_land_fire = 1
@@ -942,7 +942,7 @@ influence_ideas = { #benevolence #done
 	}
 	
 	integrated_elites = {
-		dip_advisor_cost = -0.33
+		dip_advisor_cost = -0.25
 	}
 	buffer_states = {
 		diplomatic_upkeep = 1
@@ -1129,7 +1129,7 @@ religious_ideas = { #zealotry ideas #done
 		missionary_maintenance_cost = -0.15
 	}
 	devoutness = {
-		same_culture_advisor_cost = -0.125
+		same_culture_advisor_cost = -0.1
 	}
 	religious_tradition = {
 		monarch_admin_power = 1
