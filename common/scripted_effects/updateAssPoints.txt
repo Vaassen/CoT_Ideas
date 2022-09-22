@@ -408,7 +408,10 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
-							great_power_rank = 6
+							great_power_rank = 1
+							NOT = {
+								great_power_rank = 6
+							}
 						}
 					}
 					amount = 2
@@ -429,7 +432,10 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
-							great_power_rank = 6
+							great_power_rank = 1
+							NOT = {
+								great_power_rank = 6
+							}
 						}
 					}
 					amount = 3
@@ -450,7 +456,10 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
-							great_power_rank = 6
+							great_power_rank = 1
+							NOT = {
+								great_power_rank = 6
+							}
 						}
 					}
 					amount = 4
@@ -471,7 +480,10 @@ update_ass_points = {
 								me = PREV
 								target = THIS
 							}
-							great_power_rank = 6
+							great_power_rank = 1
+							NOT = {
+								great_power_rank = 6
+							}
 						}
 					}
 					amount = 5
