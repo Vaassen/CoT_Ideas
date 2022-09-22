@@ -511,7 +511,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsVassalsUnder50
-				value = 2
+				value = 3
 			}
 		}
 		if = {
@@ -528,7 +528,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsVassalsUnder50
-				value = 2
+				value = 3
 			}
 		}
 		if = {
@@ -545,7 +545,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsVassalsUnder50
-				value = 2
+				value = 3
 			}
 		}
 		if = {
@@ -562,7 +562,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsVassalsUnder50
-				value = 2
+				value = 3
 			}
 		}
 		if = {
@@ -579,7 +579,7 @@ update_ass_points = {
 			}
 			change_variable = {
 				which = UsedAssPointsVassalsUnder50
-				value = 2
+				value = 3
 			}
 		}
 		#PUs
