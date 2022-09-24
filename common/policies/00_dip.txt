@@ -102,7 +102,7 @@ vass_gold_and_lies_1 = {
     }
 
 	merchants = 1
-	spy_offence = 0.10
+	spy_offence = 0.15
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -332,7 +332,7 @@ vass_gold_and_lies_2 = {
     }
 
 	merchants = 2
-	spy_offence = 0.20
+	spy_offence = 0.30
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -561,7 +561,7 @@ vass_gold_and_lies_3 = {
     }
 
 	merchants = 2
-	spy_offence = 0.33
+	spy_offence = 0.4
 	
 	ai_will_do = {
 		factor = 0.8		
