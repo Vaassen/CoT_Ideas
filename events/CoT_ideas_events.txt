@@ -491,3 +491,63 @@ country_event = {
 		change_national_focus = MIL
 	}
 }
+
+#Benevolence Ideas AI Vassal Buff
+country_event = {
+	id = CoT_i_events.12
+	title = CoT_i_events.12.t
+	desc = CoT_i_events.12.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		AND = {
+			ROOT = {
+				overlord = {
+					has_idea = postal_service
+				}
+				NOT = {
+					has_country_modifier = benevolence_vassal
+				}
+				NOT = {
+					was_player = yes
+				}
+				ai = yes
+			}
+		}
+	}
+
+	option = {
+		name = CoT_i_events.12.a
+		add_country_modifier = {
+			name = benevolence_vassal
+			duration = -1
+		}
+	}
+}
+
+#Remove AI Vassal buff if player takes over
+country_event = {
+	id = CoT_i_events.13
+	title = CoT_i_events.13.t
+	desc = CoT_i_events.13.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+
+	hidden = yes
+	trigger = {
+		ROOT = {
+			AND = {
+				has_country_modifier = benevolence_vassal
+				NOT = {
+					ai = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = CoT_i_events.13.a
+		remove_country_modifier = benevolence_vassal
+	}
+}
